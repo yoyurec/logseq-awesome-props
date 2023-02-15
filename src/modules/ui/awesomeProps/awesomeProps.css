@@ -242,7 +242,22 @@
     font-weight: 400;
 } */
 
+/* info */
+.block-properties .page-property-key[data-ref="info"]::before,
+.block-properties .page-property-key[data-ref="desc"]::before,
+.block-properties .page-property-key[data-ref="description"]::before {
+    content: "\eac5" !important;
+}
+
+/* repo */
+.block-properties .page-property-key[data-ref="repo"]::before,
+.block-properties .page-property-key[data-ref="repository"]::before {
+    content: "\ef6f" !important;
+}
+
 /* article */
+.block-properties .page-property-key[data-ref="docs"]::before,
+.block-properties .page-property-key[data-ref="documentation"]::before,
 .block-properties .page-property-key[data-ref*="article"]::before {
     content: "\eafd" !important;
 }

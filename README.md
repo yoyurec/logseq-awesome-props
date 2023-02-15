@@ -36,45 +36,11 @@ From Logseq store - `Plugins -> Marketplace`
 ### 📋 Properties style
 
 Icons, according to property value or it's (predefined) name.
-Key can contain word (`type` = `page-type`, `item-type`, `task` = `tasks`, etc...)
-<details>
-  <summary>Full list</summary>
+(in some cases Key can contain word: `type` => `page-type` & `item-type`, `task` => `tasks`, etc...)
 
-* `link`, `links`, `url`, `source`
-* `tags`
-* `alias`
-* `related`
-* `type`
-* `media`
-* `author`, `creator`, `owner`, `who`, `attendee`, `participant`
-* `project`
-* `task`
-* `status`
-* `area`
-* `category`, `topic`
-* `date`, `day`, `week`, `month`, `year`
-* `time`, `duration`
-* `book`, `pdf`
-* `title`
-* `library`
-* `publisher`
-* `location`, `place`
-* `article`
-* `file`
-* `template`
-* `slide`
-* `summary`, `note`
-* `number`, `isbn`
-* `code`
-* `quote`
-* `image`, `cover`, `banner`
-* `rating`, `quality`
-* `level`
-* `price`
-* `size`
-* `lang`, `language`
+Check [full list of predefined props](https://github.com//yoyurec/logseq-awesome-props/raw/main/docs/props-demo.md)!
+Copy to your Logseq to see preview of icons.
 
-</details>
 
 ![](https://github.com//yoyurec/logseq-awesome-props/raw/main/screenshots/awesomeProps.png)
 
