@@ -12,7 +12,7 @@ export const settingsConfig: SettingSchemaDesc[] = [
     {
         key: 'featureAwesomeProps',
         title: '',
-        description: 'Enable predefined icons for props? (https://github.com/yoyurec/logseq-awesome-props#-page-properties)',
+        description: 'Enable predefined icons for props? (https://github.com/yoyurec/logseq-awesome-props#-properties-style)',
         type: 'boolean',
         default: true,
     },

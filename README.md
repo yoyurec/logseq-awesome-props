@@ -33,7 +33,7 @@ From Logseq store - `Plugins -> Marketplace`
 ![](https://github.com//yoyurec/logseq-awesome-props/raw/main/screenshots/market.png)
 
 
-### 📋 Pproperties style
+### 📋 Properties style
 
 Icons, according to property value or it's (predefined) name.
 Key can contain word (`type` = `page-type`, `item-type`, `task` = `tasks`, etc...)
