@@ -1,0 +1,77 @@
+/*
+  >>> BEGIN: Settings form
+*/
+/* close button */
+.ui__modal .ui__modal-panel > .absolute {
+    z-index: 10;
+}
+
+html[data-theme="dark"] .ui__modal .ui__button {
+    opacity: 0.8 !important;
+}
+html[data-theme="dark"] .ui__modal .ui__button:hover {
+    opacity: 0.9 !important;
+}
+.cp__plugins-settings-inner > .edit-file {
+    z-index: 1;
+}
+.settings-modal .heading-item {
+    color: var(--ls-link-text-color);
+    border-color: var(--ls-link-text-color);
+    padding-bottom: 3px;
+}
+.settings-modal .desc-item {
+    position: relative;
+    padding: 8px 8px;
+    margin: 0 12px;
+}
+.settings-modal .desc-item + .desc-item {
+    border-top: 1px solid #88888850;
+}
+.settings-modal .desc-item :is(h2, strong) {
+    font-weight: 500 !important;
+}
+.settings-modal .desc-item > .form-control {
+    padding: 0;
+}
+.settings-modal .form-input:not(.color-input-helper) {
+    background-color: var(--ls-primary-background-color) !important;
+}
+.settings-modal .form-input:focus {
+    border-color: transparent;
+    background-color: none;
+    box-shadow: 0px 0px 4px var(--ls-link-text-color);
+}
+.settings-modal .form-checkbox {
+    top: 2px;
+    margin-right: 6px;
+    background-color: var(--ls-link-text-color);
+}
+.settings-modal .form-checkbox:hover {
+    transform: none;
+}
+.settings-modal .form-radio {
+    color: var(--ls-link-text-color);
+    background-color: var(--ls-link-text-color);
+}
+.settings-modal .form-radio:focus {
+    box-shadow: none;
+}
+.settings-modal .form-select:focus {
+    border-color: transparent;
+    background-color: var(--ls-primary-background-color);
+    box-shadow: 0px 0px 4px var(--ls-link-text-color);
+}
+.settings-modal .form-select option {
+    background-color: var(--ls-primary-background-color);
+    color: var(--ls-primary-text-color);
+}
+.settings-modal .desc-item > h2 :is(code, .ls-icon-caret-right) {
+    display: none;
+}
+.settings-modal .desc-item .wrap .pl-1 {
+    padding: 0;
+}
+/*
+  <<<< END: Settings form
+*/

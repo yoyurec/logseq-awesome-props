@@ -1,0 +1,27 @@
+@import url("./settingsForms.css");
+
+/*
+  >>> BEGIN: Settings icons
+*/
+.panel-wrap[data-id="logseq-awesome-props"] .heading-item h2::before,
+.panel-wrap[data-id="logseq-awesome-props"] .desc-item[data-key] small::before {
+    display: inline-block;
+    margin-right: 4px;
+    font-family: "tabler-icons";
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.panel-wrap[data-id="logseq-awesome-props"] .heading-item h2::before {
+    font-size: 22px;
+    line-height: 0;
+    transform: translateY(3px);
+}
+
+.panel-wrap[data-id="logseq-awesome-props"] .desc-item[data-key] small::before {
+    transform: translateY(1px);
+}
+
+/*
+  <<<< END: Settings icons
+*/
