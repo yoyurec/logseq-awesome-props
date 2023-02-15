@@ -16,13 +16,13 @@
     </a>
 </p>
 
-### 📋 Restyled and iconized properties for Logseq
-
-![](https://github.com//yoyurec/logseq-awesome-props/raw/main/screenshots/screen.png)
+### 📋 Restyled and iconized properties for Logseq ala Notion/Tana
 
 ## Features
-* 📋 Restyled page/block properties keys: icons aka Notion/Tana style <a href="#-page-properties">🡖</a>
-* 👓 Hide properties: all `.dotProps` or specified in list <a href="#-page-properties">🡖</a>
+* 📋 Restyled page/block properties keys: icons aka Notion/Tana style <a href="#-properties-style">🡖</a>
+* 👓 Hide properties: all `.dotProps` or specified in list <a href="#-hide-properties">🡖</a>
+
+![](https://github.com//yoyurec/logseq-awesome-props/raw/main/screenshots/screen.png)
 
 ## Installation
 
@@ -33,7 +33,7 @@ From Logseq store - `Plugins -> Marketplace`
 ![](https://github.com//yoyurec/logseq-awesome-props/raw/main/screenshots/market.png)
 
 
-### 📋 Page properties
+### 📋 Pproperties style
 
 Icons, according to property value or it's (predefined) name.
 Key can contain word (`type` = `page-type`, `item-type`, `task` = `tasks`, etc...)

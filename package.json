@@ -1,6 +1,6 @@
 {
   "name": "logseq-awesome-props",
-  "description": "Restyled and iconized properties for Logseq",
+  "description": "Restyled and iconized properties for Logseq ala Notion/Tana",
   "version": "1.0.0",
   "author": "yoyurec <yoyurec@gmail.com>",
   "main": "dist/index.html",
