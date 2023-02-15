@@ -32,6 +32,9 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
+      - name: Get next version
+        run: npx semantic-release --dry-run --no-ci
+
       - name: Build dist
         run: pnpm build
 
