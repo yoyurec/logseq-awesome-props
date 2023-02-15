@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/yoyurec/logseq-awesome-props/compare/v1.0.2...v1.0.3) (2023-02-15)
+
+
+### Bug Fixes
+
+* **icons:** add repo, desc, docs icons. create demo md file ([063af31](https://github.com/yoyurec/logseq-awesome-props/commit/063af31f33629a4c7a37bd509e40c6e7ead34dbb))
+
 ## [1.0.2](https://github.com/yoyurec/logseq-awesome-props/compare/v1.0.1...v1.0.2) (2023-02-15)
 
 
