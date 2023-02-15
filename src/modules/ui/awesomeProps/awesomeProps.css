@@ -181,6 +181,7 @@
 .block-properties .page-property-key[data-ref*="author"]::before,
 .block-properties .page-property-key[data-ref*="creator"]::before,
 .block-properties .page-property-key[data-ref*="owner"]::before,
+.block-properties .page-property-key[data-ref="by"]::before,
 .block-properties .page-property-key[data-ref="who"]::before,
 .block-properties .page-property-key[data-ref*="attendee"]::before,
 .block-properties .page-property-key[data-ref*="participant"]::before {
@@ -201,6 +202,7 @@
 }
 
 /* date */
+.block-properties .page-property-key[data-ref="published"]::before,
 .block-properties .page-property-key[data-ref*="date"]::before,
 .block-properties .page-property-key[data-ref*="day"]::before,
 .block-properties .page-property-key[data-ref*="week"]::before,
@@ -357,4 +359,7 @@
 .block-properties::before,
 .block-properties .inline.mr-1::before {
     display: none !important;
+}
+.ls-block .page-reference:hover {
+    filter: none;
 }
