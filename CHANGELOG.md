@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/yoyurec/logseq-awesome-props/compare/v1.0.0...v1.0.1) (2023-02-15)
+
+
+### Bug Fixes
+
+* **build:** add versionin bback ([0d9739a](https://github.com/yoyurec/logseq-awesome-props/commit/0d9739a6c45aa62dc2bb8afef6f8cd41ace80fee))
+
 # 1.0.0 (2023-02-15)
 
 
