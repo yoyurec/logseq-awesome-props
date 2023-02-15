@@ -1,0 +1,14 @@
+# 1.0.0 (2023-02-15)
+
+
+### Bug Fixes
+
+* **build:** semantic bump ([3384107](https://github.com/yoyurec/logseq-awesome-props/commit/338410721ae32fe6b55c3655a03af6e5629643fb))
+* **build:** varsion deps ([9c6269e](https://github.com/yoyurec/logseq-awesome-props/commit/9c6269e1264b3d77df21af4ea1e5596f44bb8e44))
+* **docs:** info ([67c1298](https://github.com/yoyurec/logseq-awesome-props/commit/67c12981e95ee600a9d3128307de26a607522ffc))
+* **repo:** init commit ([4c1de5c](https://github.com/yoyurec/logseq-awesome-props/commit/4c1de5c02387bf92634b178e627b31573b95f2a5))
+
+
+### Features
+
+* **all:** add plugin and modules ([98114b9](https://github.com/yoyurec/logseq-awesome-props/commit/98114b977d81bab3211dd796631919331468b314))
