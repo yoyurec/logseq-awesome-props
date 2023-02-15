@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/yoyurec/logseq-awesome-props/compare/v1.0.1...v1.0.2) (2023-02-15)
+
+
+### Bug Fixes
+
+* **icons:** add aliases to existing + fix Flow theme hover ([b19e731](https://github.com/yoyurec/logseq-awesome-props/commit/b19e731e32f5c2717abfe1d17df4684636460a8c))
+
 ## [1.0.1](https://github.com/yoyurec/logseq-awesome-props/compare/v1.0.0...v1.0.1) (2023-02-15)
 
 
