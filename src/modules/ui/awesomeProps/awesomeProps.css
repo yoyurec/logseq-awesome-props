@@ -353,6 +353,15 @@
     content: "\f2db" !important;
 }
 
+/* ThemeSystem https://www.themesystem.com/ */
+.block-properties .page-property-key[data-ref="theme"]::before {
+    content: "\eb35" !important;
+}
+.block-properties .page-property-key[data-ref="outcome"]::before {
+    content: "\f1f8" !important;
+}
+
+
 
 /* edit */
 .pre-block > .flex > .editor-wrapper > .editor-inner > textarea {
