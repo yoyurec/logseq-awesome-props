@@ -1,3 +1,10 @@
+## [1.0.5](https://github.com/yoyurec/logseq-awesome-props/compare/v1.0.4...v1.0.5) (2023-02-16)
+
+
+### Bug Fixes
+
+* **settings:** toggle + refactoring ([f9799d4](https://github.com/yoyurec/logseq-awesome-props/commit/f9799d489a253697dcd932e165faa7f5f5e00702))
+
 ## [1.0.4](https://github.com/yoyurec/logseq-awesome-props/compare/v1.0.3...v1.0.4) (2023-02-16)
 
 
