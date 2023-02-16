@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/yoyurec/logseq-awesome-props/compare/v1.0.3...v1.0.4) (2023-02-16)
+
+
+### Bug Fixes
+
+* **icons:** add "theme" and "outcome" ([b05d589](https://github.com/yoyurec/logseq-awesome-props/commit/b05d589adc95194b5c45c88942757def9c554864))
+
 ## [1.0.3](https://github.com/yoyurec/logseq-awesome-props/compare/v1.0.2...v1.0.3) (2023-02-15)
 
 
