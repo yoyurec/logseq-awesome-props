@@ -1,5 +1,4 @@
 import { SettingSchemaDesc } from '@logseq/libs/dist/LSPlugin.user';
-import { globals } from '../modules/globals/globals';
 
 export const settingsConfig: SettingSchemaDesc[] = [
     {
@@ -10,7 +9,7 @@ export const settingsConfig: SettingSchemaDesc[] = [
         default: null,
     },
     {
-        key: 'featureAwesomeProps',
+        key: 'iconProps',
         title: '',
         description: 'Enable predefined icons for props? (https://github.com/yoyurec/logseq-awesome-props#-properties-style)',
         type: 'boolean',
@@ -24,14 +23,14 @@ export const settingsConfig: SettingSchemaDesc[] = [
         default: null,
     },
     {
-        key: 'featureHideDotProps',
+        key: 'hideDotProps',
         title: '',
         description: 'Hide (in view mode) props started with dot (.propName)?',
         type: 'boolean',
         default: true,
     },
     {
-        key: 'featureHideSetOfProps',
+        key: 'hideSetOfProps',
         title: '',
         description: 'Hide own specific page props (comma separated). Delete to disable',
         type: 'string',
@@ -45,7 +44,7 @@ export const settingsConfig: SettingSchemaDesc[] = [
         default: null,
     },
     {
-        key: 'featureUpdaterEnabled',
+        key: 'pluginUpdateNotify',
         title: '',
         description: 'Enable new version notifier on app load?',
         type: 'boolean',

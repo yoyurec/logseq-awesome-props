@@ -1,7 +1,7 @@
 import { doc, body, globals } from '../modules/globals/globals';
 
-import { awesomePropsLoad, awesomePropsLoadUnload } from '../modules/ui/awesomeProps/awesomeProps';
-import { hidePropsLoad, hidePropsUnload } from '../modules/ui/hideProps/hideProps';
+import { iconPropsLoad, iconPropsUnload } from '../modules/iconProps/iconProps';
+import { hidePropsLoad, hidePropsUnload } from '../modules/hideProps/hideProps';
 import { checkPluginUpdate } from '../utils/utils';
 
 export const pluginLoad = () => {
@@ -17,7 +17,7 @@ export const pluginLoad = () => {
         });
     }, 2000)
 
-    if (globals.pluginConfig.featureUpdaterEnabled) {
+    if (globals.pluginConfig.pluginUpdateNotify) {
         setTimeout(() => {
             checkPluginUpdate();
         }, 8000)
@@ -46,7 +46,7 @@ const unregisterPlugin = () => {
 // Main logic runners
 const runStuff = async () => {
     setTimeout(() => {
-        awesomePropsLoad();
+        iconPropsLoad();
     }, 2000);
     setTimeout(() => {
         hidePropsLoad();
@@ -54,6 +54,6 @@ const runStuff = async () => {
 }
 
 const stopStuff = () => {
-    awesomePropsLoadUnload();
+    iconPropsUnload();
     hidePropsUnload();
 }

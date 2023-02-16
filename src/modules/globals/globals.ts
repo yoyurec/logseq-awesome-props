@@ -13,5 +13,4 @@ export const globals: globalsType = {
     pluginID: PL.id,
     pluginConfig: null,
     isPluginEnabled: 'is-awPr-enabled',
-    promoAwesomeStylerMsg: 'To customize UI & content text/bg colors, install "Awesome Styler" (former "Solarized Extended") theme! https://github.com/yoyurec/logseq-awesome-styler',
 };

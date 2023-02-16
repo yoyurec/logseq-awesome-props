@@ -1,11 +1,13 @@
 import { LSPluginBaseInfo } from '@logseq/libs/dist/LSPlugin.user';
 
-import { globals } from '../modules/globals/globals';
-import { settingsConfig } from './settingsConfig';
-import { toggleHideDotPropsFeature, toggleHideSetOfPropsFeature } from '../modules/ui/hideProps/hideProps';
 import { objectsKeysDiff } from '../utils/utils';
+import { globals } from '../modules/globals/globals';
 
 import './settings.css';
+
+import { settingsConfig } from './settingsConfig';
+import { toggleHideDotProps, toggleHideSetOfProps } from '../modules/hideProps/hideProps';
+import { toggleIconProps } from '../modules/iconProps/iconProps';
 
 export const settingsLoad = () => {
     logseq.useSettingsSchema(settingsConfig);
@@ -25,10 +27,13 @@ export const onSettingsChangedCallback = (settings: LSPluginBaseInfo['settings']
         return;
     }
 
-    if (settingsChangedKey.includes('featureHideDotProps')) {
-        toggleHideDotPropsFeature();
+    if (settingsChangedKey.includes('iconProps')) {
+        toggleIconProps();
     }
-    if (settingsChangedKey.includes('featureHideSetOfProps')) {
-        toggleHideSetOfPropsFeature();
+    if (settingsChangedKey.includes('hideDotProps')) {
+        toggleHideDotProps();
+    }
+    if (settingsChangedKey.includes('hideSetOfProps')) {
+        toggleHideSetOfProps();
     }
 }
