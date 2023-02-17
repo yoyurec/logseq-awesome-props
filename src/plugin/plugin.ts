@@ -31,6 +31,22 @@ const pluginUnload = () => {
 }
 
 const registerPlugin = async () => {
+    logseq.provideModel({
+        showSettingsPopup: showSettingsPopup,
+    });
+    logseq.App.registerUIItem(
+        'toolbar',
+        {
+            key: 'Awesome-props',
+            template: `
+                <a
+                class="button" id="awPr-toggle-button"
+                data-on-click="showSettingsPopup" data-rect>
+                    <i class="ti ti-list-details"></i>
+                </a>
+            `
+        }
+    );
     setTimeout(() => {
         if (doc.head) {
             const logseqCSS = doc.head.querySelector(`link[href="./css/style.css"]`);
@@ -42,6 +58,10 @@ const registerPlugin = async () => {
 const unregisterPlugin = () => {
     doc.getElementById('css-awesomeProps')?.remove();
 }
+
+export const showSettingsPopup = () => {
+    logseq.showSettingsUI();
+ }
 
 // Main logic runners
 const runStuff = async () => {

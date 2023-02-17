@@ -2,20 +2,6 @@ import { SettingSchemaDesc } from '@logseq/libs/dist/LSPlugin.user';
 
 export const settingsConfig: SettingSchemaDesc[] = [
     {
-        key: 'styleHeading',
-        title: 'Properties style',
-        description: '',
-        type: 'heading',
-        default: null,
-    },
-    {
-        key: 'iconProps',
-        title: '',
-        description: 'Enable predefined icons for props? (https://github.com/yoyurec/logseq-awesome-props#-properties-style)',
-        type: 'boolean',
-        default: true,
-    },
-    {
         key: 'hideHeading',
         title: 'Properties visibility',
         description: '',
@@ -35,6 +21,27 @@ export const settingsConfig: SettingSchemaDesc[] = [
         description: 'Hide own specific page props (comma separated). Delete to disable',
         type: 'string',
         default: 'propToHide,propAnother,color,hidetitle,banner',
+    },
+    {
+        key: 'iconsHeading',
+        title: 'Properties icons',
+        description: '',
+        type: 'heading',
+        default: null,
+    },
+    {
+        key: 'iconProps',
+        title: 'Enable icons for props?',
+        description: 'Wanna suggest yours? Welcome to https://bit.ly/dicsocrdPropsThread OR create an issue on GitHub https://bit.ly/newPropIconRequest',
+        type: 'boolean',
+        default: true,
+    },
+    {
+        key: 'iconsListHeading',
+        title: 'Icons list. Change/translate properties names to yours (comma separated, no spaces)',
+        description: '',
+        type: 'heading',
+        default: null,
     },
     {
         key: 'otherHeading',

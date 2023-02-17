@@ -24,6 +24,8 @@
 
 ![](https://github.com//yoyurec/logseq-awesome-props/raw/main/screenshots/screen.png)
 
+![](https://github.com//yoyurec/logseq-awesome-props/raw/main/screenshots/awesomeProps.png)
+
 ## Installation
 
 ### Plugin for desktop app
@@ -36,20 +38,17 @@ From Logseq store - `Plugins -> Marketplace`
 ### 📋 Properties style
 
 Icons, according to property value or it's (predefined) name.
-(in some cases Key can contain word: `type` => `page-type` & `item-type`, `task` => `tasks`, etc...)
 
 Check [full list of predefined props](https://github.com//yoyurec/logseq-awesome-props/raw/main/docs/props-demo.md)!
-Copy to your Logseq to see preview of icons.
 
-
-![](https://github.com//yoyurec/logseq-awesome-props/raw/main/screenshots/awesomeProps.png)
+![](https://github.com//yoyurec/logseq-awesome-props/raw/main/screenshots/settings-icons.png)
 
 ### 👓 Hide properties
 
 * Hide properties started with dot `.`
 * or your own list of key names
 
-![](https://github.com//yoyurec/logseq-awesome-props/raw/main/screenshots/settings-features.png)
+![](https://github.com//yoyurec/logseq-awesome-props/raw/main/screenshots/settings-hide.png)
 
 ## What is Logseq?
 Logseq is a privacy-first, open-source knowledge base. Visit https://logseq.com for more information.

@@ -1,1 +1,23 @@
 @import url("./settingsForms.css");
+
+/* Icons */
+.settings-modal .desc-item[data-key^="icon-"] {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.settings-modal .desc-item[data-key^="icon-"] small {
+    display: none;
+}
+.settings-modal .desc-item[data-key^="icon-"] .form-control {
+    margin-left: 30px;
+    padding-top: 0;
+}
+.settings-modal .desc-item[data-key^="icon-"] .form-control::before {
+    position: absolute;
+    top: 4px;
+    left: 10px;
+    font-family: tabler-icons;
+    font-size: 1.13em;
+    font-weight: 400;
+    width: 1em;
+}

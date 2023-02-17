@@ -1,4 +1,3 @@
-/* link */
 .block-properties .page-property-key[data-ref="link"]::before,
 .block-properties .page-property-key[data-ref="links"]::before,
 .block-properties .page-property-key[data-ref="url"]::before,
@@ -6,199 +5,181 @@
     content: "\eade" !important;
 }
 
-/* tags */
 .block-properties .page-property-key[data-ref="tags"]::before,
 .block-properties .page-property-key[data-ref="tag"]::before {
     content: "\eb34" !important;
 }
 
-/* alias */
 .block-properties .page-property-key[data-ref="alias"]::before {
     content: "\edef" !important;
 }
-/* related */
+
 .block-properties .page-property-key[data-ref="related"]::before {
     content: "\edff" !important;
 }
-/* media */
+
 .block-properties .page-property-key[data-ref="media"]::before {
     content: "\ece8" !important;
 }
-/* page-type */
-.block-properties .page-property-key[data-ref*="type"]::before {
+
+.block-properties .page-property-key[data-ref="type"]::before {
     content: "\eaba" !important;
 }
-/* area */
+
 .block-properties .page-property-key[data-ref="area"]::before {
     content: "\edc5" !important;
 }
-/* category */
-.block-properties .page-property-key[data-ref*="category"]::before,
+
+.block-properties .page-property-key[data-ref="category"]::before,
 .block-properties .page-property-key[data-ref="subcategory"]::before,
 .block-properties .page-property-key[data-ref="topic"]::before {
     content: "\ec9f" !important;
 }
 
-/* author */
-.block-properties .page-property-key[data-ref*="author"]::before,
-.block-properties .page-property-key[data-ref*="creator"]::before,
-.block-properties .page-property-key[data-ref*="owner"]::before,
+.block-properties .page-property-key[data-ref="author"]::before,
+.block-properties .page-property-key[data-ref="creator"]::before,
+.block-properties .page-property-key[data-ref="owner"]::before,
 .block-properties .page-property-key[data-ref="by"]::before,
 .block-properties .page-property-key[data-ref="who"]::before,
-.block-properties .page-property-key[data-ref*="attendee"]::before,
-.block-properties .page-property-key[data-ref*="participant"]::before {
+.block-properties .page-property-key[data-ref="attendee"]::before,
+.block-properties .page-property-key[data-ref="participant"]::before {
     content: "\ef68" !important;
 }
 
-/* project */
-.block-properties .page-property-key[data-ref*="project"]::before {
+.block-properties .page-property-key[data-ref="project"]::before {
     content: "\ecef" !important;
 }
-/* task(s) */
-.block-properties .page-property-key[data-ref*="task"]::before {
+
+.block-properties .page-property-key[data-ref="task"]::before {
     content: "\eb6a" !important;
 }
-/* status */
-.block-properties .page-property-key[data-ref*="status"]::before {
+
+.block-properties .page-property-key[data-ref="status"]::before {
     content: "\ea67" !important;
 }
 
-/* date */
 .block-properties .page-property-key[data-ref="published"]::before,
-.block-properties .page-property-key[data-ref*="date"]::before,
-.block-properties .page-property-key[data-ref*="day"]::before,
-.block-properties .page-property-key[data-ref*="week"]::before,
-.block-properties .page-property-key[data-ref*="month"]::before,
-.block-properties .page-property-key[data-ref*="year"]::before {
+.block-properties .page-property-key[data-ref="date"]::before,
+.block-properties .page-property-key[data-ref="day"]::before,
+.block-properties .page-property-key[data-ref="week"]::before,
+.block-properties .page-property-key[data-ref="month"]::before,
+.block-properties .page-property-key[data-ref="year"]::before {
     content: "\ea52" !important;
 }
-/* time */
+
 .block-properties .page-property-key[data-ref="pace"]::before,
-.block-properties .page-property-key[data-ref*="time"]::before,
-.block-properties .page-property-key[data-ref*="duration"]::before {
+.block-properties .page-property-key[data-ref="time"]::before,
+.block-properties .page-property-key[data-ref="duration"]::before {
     content: "\ea04" !important;
 }
 
-/* cover */
-.block-properties .page-property-key[data-ref*="image"]::before,
-.block-properties .page-property-key[data-ref*="cover"]::before,
+.block-properties .page-property-key[data-ref="image"]::before,
+.block-properties .page-property-key[data-ref="cover"]::before,
 .block-properties .page-property-key[data-ref="banner"]::before {
     content: "\eb0a" !important;
 }
 
-/* book */
-.block-properties .page-property-key[data-ref*="book"]::before,
-.block-properties .page-property-key[data-ref*="pdf"]::before {
+.block-properties .page-property-key[data-ref="book"]::before,
+.block-properties .page-property-key[data-ref="pdf"]::before {
     content: "\ea39" !important;
 }
 
-/* info */
 .block-properties .page-property-key[data-ref="info"]::before,
 .block-properties .page-property-key[data-ref="desc"]::before,
 .block-properties .page-property-key[data-ref="description"]::before {
     content: "\eac5" !important;
 }
 
-/* repo */
 .block-properties .page-property-key[data-ref="repo"]::before,
 .block-properties .page-property-key[data-ref="repository"]::before {
     content: "\ef6f" !important;
 }
 
-/* article */
 .block-properties .page-property-key[data-ref="docs"]::before,
 .block-properties .page-property-key[data-ref="documentation"]::before,
-.block-properties .page-property-key[data-ref*="article"]::before {
+.block-properties .page-property-key[data-ref="article"]::before {
     content: "\eafd" !important;
 }
-/* slide */
-.block-properties .page-property-key[data-ref*="slide"]::before,
+
+.block-properties .page-property-key[data-ref="slide"]::before,
 .block-properties .page-property-key[data-ref="presentation"]::before {
     content: "\eb70" !important;
 }
-/* file */
-.block-properties .page-property-key[data-ref*="file"]::before {
+
+.block-properties .page-property-key[data-ref="file"]::before {
     content: "\eb02" !important;
 }
 
-/* template */
 .block-properties .page-property-key[data-ref="template"]::before {
     content: "\eb39" !important;
 }
 
-/* title */
-.block-properties .page-property-key[data-ref*="title"]::before {
+.block-properties .page-property-key[data-ref="title"]::before {
     content: "\f2b1" !important;
 }
-/* library */
-.block-properties .page-property-key[data-ref*="library"]::before {
+
+.block-properties .page-property-key[data-ref="library"]::before {
     content: "\efc5" !important;
 }
-/* number */
+
 .block-properties .page-property-key[data-ref="number"]::before,
 .block-properties .page-property-key[data-ref="isbn"]::before {
     content: "\f1fe" !important;
 }
-/* code */
+
 .block-properties .page-property-key[data-ref="code"]::before {
     content: "\ea77" !important;
 }
-/* quote */
-.block-properties .page-property-key[data-ref*="quote"]::before {
-    content: "\efbe" !important;
-}
-/* note */
-.block-properties .page-property-key[data-ref*="summary"]::before,
-.block-properties .page-property-key[data-ref*="note"]::before {
+
+.block-properties .page-property-key[data-ref="summary"]::before,
+.block-properties .page-property-key[data-ref="note"]::before {
     content: "\eb83" !important;
 }
 
-/* publisher */
 .block-properties .page-property-key[data-ref="publisher"]::before,
 .block-properties .page-property-key[data-ref="print"]::before {
     content: "\eb0e" !important;
 }
-/* location */
+
 .block-properties .page-property-key[data-ref="location"]::before,
 .block-properties .page-property-key[data-ref="place"]::before {
     content: "\eae8" !important;
 }
 
-/* rating */
-.block-properties .page-property-key[data-ref*="rating"]::before,
-.block-properties .page-property-key[data-ref*="quality"]::before {
+.block-properties .page-property-key[data-ref="rating"]::before,
+.block-properties .page-property-key[data-ref="quality"]::before {
     content: "\eb2e" !important;
 }
-/* lang */
+
 .block-properties .page-property-key[data-ref="lang"]::before,
 .block-properties .page-property-key[data-ref="language"]::before {
     content: "\eaa6" !important;
 }
-/* level */
-.block-properties .page-property-key[data-ref*="level"]::before {
+
+.block-properties .page-property-key[data-ref="level"]::before {
     content: "\efee" !important;
 }
-/* size */
-.block-properties .page-property-key[data-ref*="size"]::before {
+
+.block-properties .page-property-key[data-ref="size"]::before {
     content: "\eef7" !important;
 }
-/* price */
-.block-properties .page-property-key[data-ref*="price"]::before {
+
+.block-properties .page-property-key[data-ref="price"]::before {
     content: "\ee1e" !important;
 }
-/* paid */
+
 .block-properties .page-property-key[data-ref="paid"]::before {
     content: "\eb25" !important;
 }
-/* certificate */
+
 .block-properties .page-property-key[data-ref="certificate"]::before {
     content: "\ed76" !important;
 }
-/* equipment */
+
 .block-properties .page-property-key[data-ref="equipment"]::before {
     content: "\eff0" !important;
 }
-/* body-part */
+
 .block-properties .page-property-key[data-ref="body-part"]::before {
     content: "\f2db" !important;
 }
