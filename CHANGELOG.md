@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/yoyurec/logseq-awesome-props/compare/v1.0.5...v1.1.0) (2023-02-17)
+
+
+### Features
+
+* **icons:** editable props names, add toobar button, dynamic list ([f494a84](https://github.com/yoyurec/logseq-awesome-props/commit/f494a84b53f47e6a28f344636a61a4715eced198))
+
 ## [1.0.5](https://github.com/yoyurec/logseq-awesome-props/compare/v1.0.4...v1.0.5) (2023-02-16)
 
 
