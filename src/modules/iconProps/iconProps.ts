@@ -27,6 +27,7 @@ export const iconPropsLoad = async () => {
 
 export const iconPropsUnload = () => {
     doc.head.querySelector('style[data-injected-style^="awPr-iconProps-css"]')?.remove();
+    doc.head.querySelector('style[data-injected-style^="awPr-predefinedIcons-css"]')?.remove();
 }
 
 const getPredefinedIconsCSS = (): string => {
