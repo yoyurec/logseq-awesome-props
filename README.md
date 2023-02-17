@@ -1,5 +1,5 @@
 ## Other my plugins/themes
-* ⚡ [Awesome UI](https://github.com/yoyurec/logseq-awesome-ui)
+* 🪓 [Awesome UI](https://github.com/yoyurec/logseq-awesome-ui)
 * 🎨 [Awesome Styler](https://github.com/yoyurec/logseq-awesome-styler)
 * ⭐ [Awesome Links](https://github.com/yoyurec/logseq-awesome-links)
 * 📰 [Banners](https://github.com/yoyurec/logseq-banners-plugin)
@@ -35,15 +35,24 @@ From Logseq store - `Plugins -> Marketplace`
 ![](https://github.com//yoyurec/logseq-awesome-props/raw/main/screenshots/market.png)
 
 
-### 📋 Properties style
+## 📋 Properties style
 
+### Layout
+
+Awesome grid or simple flat inline, with or without icons!
+
+![](https://github.com//yoyurec/logseq-awesome-props/raw/main/screenshots/layout.png)
+
+![](https://github.com//yoyurec/logseq-awesome-props/raw/main/screenshots/settings-layout.png)
+
+### Icons
 Icons, according to property value or it's (predefined) name.
 
 Check [full list of predefined props](https://github.com//yoyurec/logseq-awesome-props/raw/main/docs/props-demo.md)!
 
 ![](https://github.com//yoyurec/logseq-awesome-props/raw/main/screenshots/settings-icons.png)
 
-### 👓 Hide properties
+## 👓 Hide properties
 
 * Hide properties started with dot `.`
 * or your own list of key names
