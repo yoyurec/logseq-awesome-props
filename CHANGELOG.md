@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/yoyurec/logseq-awesome-props/compare/v1.1.1...v1.1.2) (2023-02-17)
+
+
+### Bug Fixes
+
+* **settings:** generate css from settings ([0a13f17](https://github.com/yoyurec/logseq-awesome-props/commit/0a13f1776a9a1b4289ff1aed046811d5c5ffefe2))
+
 ## [1.1.1](https://github.com/yoyurec/logseq-awesome-props/compare/v1.1.0...v1.1.1) (2023-02-17)
 
 
