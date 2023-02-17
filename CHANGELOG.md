@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/yoyurec/logseq-awesome-props/compare/v1.1.0...v1.1.1) (2023-02-17)
+
+
+### Bug Fixes
+
+* **icons:** on toggle unload icons CSS ([a349bf4](https://github.com/yoyurec/logseq-awesome-props/commit/a349bf46d6576474e7c3799adb54ebd1459c2fde))
+
 # [1.1.0](https://github.com/yoyurec/logseq-awesome-props/compare/v1.0.5...v1.1.0) (2023-02-17)
 
 
