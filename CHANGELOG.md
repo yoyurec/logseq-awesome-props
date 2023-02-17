@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/yoyurec/logseq-awesome-props/compare/v1.1.2...v1.2.0) (2023-02-17)
+
+
+### Features
+
+* **all:** inline layout, layout switcher, icons on/off, independent config page/block props ([0d9a67e](https://github.com/yoyurec/logseq-awesome-props/commit/0d9a67e38c14ed58358064e3dfccb6f1405484fc))
+
 ## [1.1.2](https://github.com/yoyurec/logseq-awesome-props/compare/v1.1.1...v1.1.2) (2023-02-17)
 
 
