@@ -1,0 +1,118 @@
+:root {
+    --awPr-propEdit-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' stroke='%23888A' fill='none' %3e%3cpath d='M4.182 4h-.727A1.455 1.455 0 0 0 2 5.455V12a1.454 1.454 0 0 0 1.455 1.454H10A1.454 1.454 0 0 0 11.454 12v-.727'/%3e%3cpath d='m10.636 2.636 2.182 2.182m1.011-1.033a1.527 1.527 0 0 0-2.16-2.16L5.545 7.727V9.91h2.182l6.102-6.116v-.008Z'/%3e%3c/svg%3e");
+}
+
+/* default */
+body[data-awpr-page-props-icons] .block-properties.page-properties .page-property-value::before,
+.block-properties.page-properties[data-awpr-page-props-icons] .page-property-value::before,
+body[data-awpr-block-props-icons] .block-properties:not(.page-properties) .page-property-value::before,
+.block-properties:not(.page-properties)[data-awpr-page-props-icons] .page-property-value::before {
+    content: "\ea08";
+    position: absolute;
+    z-index: 0;
+    margin-top: -0.1ex;
+    left: var(--awPr-valueIcon-left);
+    font-family: 'tabler-icons';
+    color: #888888AA;
+    background: var(--ls-block-properties-background-color);
+    font-size: 1.13em;
+    font-weight: 400;
+    width: 1em;
+}
+
+body[data-awpr-page-props-icons] .block-properties.page-properties .page-property-value::before,
+.block-properties.page-properties[data-awpr-page-props-icons] .page-property-value::before {
+    background: var(--ls-page-properties-background-color);
+}
+
+/* ext link */
+body[data-awpr-page-props-icons] .block-properties.page-properties .page-property-value a.external-link::before,
+.block-properties.page-properties[data-awpr-page-props-icons] .page-property-value a.external-link::before,
+body[data-awpr-block-props-icons] .block-properties:not(.page-properties) .page-property-value a.external-link::before,
+.block-properties:not(.page-properties)[data-awpr-page-props-icons] .page-property-value a.external-link::before {
+    content: "\eade";
+    position: absolute;
+    z-index: 1;
+    margin-top: -0.1ex;
+    left: var(--awPr-valueIcon-left);
+    font-family: 'tabler-icons';
+    color: #888888AA;
+    background: var(--ls-block-properties-background-color);
+    font-size: 1.13em;
+    font-weight: 400;
+    width: 1em;
+}
+body[data-awpr-page-props-icons] .block-properties.page-properties .page-property-value a.external-link::before,
+.block-properties.page-properties[data-awpr-page-props-icons] .page-property-value a.external-link::before {
+    background: var(--ls-page-properties-background-color);
+}
+
+/* page refs */
+body[data-awpr-page-props-icons] .block-properties.page-properties .page-property-value .page-reference:first-of-type::before,
+.block-properties.page-properties[data-awpr-page-props-icons] .page-property-value .page-reference:first-of-type::before,
+body[data-awpr-block-props-icons] .block-properties:not(.page-properties) .page-property-value .page-reference:first-of-type::before,
+.block-properties:not(.page-properties)[data-awpr-page-props-icons] .page-property-value .page-reference:first-of-type::before {
+    content: "\ea24";
+    position: absolute;
+    z-index: 1;
+    margin-top: -0.2ex;
+    left: var(--awPr-valueIcon-left);
+    font-family: tabler-icons;
+    color: #888a;
+    background: var(--ls-block-properties-background-color);
+    font-size: 1.3em;
+    font-weight: 400;
+    width: 1em;
+}
+body[data-awpr-page-props-icons] .block-properties.page-properties .page-property-value .page-reference:first-of-type::before,
+.block-properties.page-properties[data-awpr-page-props-icons] .page-property-value .page-reference:first-of-type::before {
+    background: var(--ls-page-properties-background-color);
+}
+
+/* key */
+body[data-awpr-page-props-icons] .block-properties.page-properties .page-property-key[data-ref]::before,
+.block-properties.page-properties[data-awpr-page-props-icons] .page-property-key[data-ref]::before,
+body[data-awpr-block-props-icons] .block-properties:not(.page-properties) .page-property-key[data-ref]::before,
+.block-properties:not(.page-properties)[data-awpr-page-props-icons] .page-property-key[data-ref]::before {
+    content: '';
+    position: absolute;
+    z-index: 2;
+    top: var(--awPr-keyIcon-top);
+    left: 1px;
+    font-family: 'tabler-icons';
+    color: #888888AA;
+    background: var(--ls-block-properties-background-color);
+    font-size: 1.13em;
+    font-weight: 400;
+    width: 1em;
+}
+body[data-awpr-page-props-icons] .block-properties.page-properties .page-property-key[data-ref]::before,
+.block-properties.page-properties[data-awpr-page-props-icons] .page-property-key[data-ref]::before {
+    background: var(--ls-page-properties-background-color);
+}
+
+
+/* edit */
+body[data-awpr-page-props-icons] .pre-block > .flex > .editor-wrapper > .editor-inner > textarea {
+    padding: 0 0 0 2.2em !important;
+    border: 4px solid transparent !important;
+    background:
+        var(--awPr-propEdit-icon) 0.45em 0 / 1.2em 1.5em repeat-y local,
+        linear-gradient(transparent 0%, transparent 96%, #88888833 100%) 0 0 / 1px 1.5em repeat local !important;
+    white-space: pre;
+    overflow: auto;
+}
+
+
+/*  Flow theme fix*/
+.page-property-key {
+    min-width: unset !important;
+    max-width: unset !important;
+}
+.block-properties::before,
+.block-properties .inline.mr-1::before {
+    display: none !important;
+}
+.ls-block .page-reference:hover {
+    filter: none;
+}

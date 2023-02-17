@@ -8,7 +8,8 @@ import predefinedIconsList from './predefinedIcons.json';
 
 import { settingsConfig } from './settingsConfig';
 import { toggleHideDotProps, toggleHideSetOfProps } from '../modules/hideProps/hideProps';
-import { refreshIconsCSS, toggleIconProps } from '../modules/iconProps/iconProps';
+import { refreshPropsIconsListCSS, toggleBlockPropsIcons, togglePagePropsIcons } from '../modules/propsIcons/propsIcons';
+import { togglePagePropsLayout, toggleBlockPropsLayout } from '../modules/propsLayout/propsLayout';
 
 export const settingsLoad = () => {
     let insertIndex = 0;
@@ -54,10 +55,19 @@ export const onSettingsChangedCallback = (settings: LSPluginBaseInfo['settings']
         return;
     }
     if (settingsChangedKey.some(key => key.startsWith('icon-'))) {
-        refreshIconsCSS();
+        refreshPropsIconsListCSS();
     }
-    if (settingsChangedKey.includes('iconProps')) {
-        toggleIconProps();
+    if (settingsChangedKey.includes('blockPropsLayout')) {
+        toggleBlockPropsLayout();
+    }
+    if (settingsChangedKey.includes('blockPropsIcons')) {
+        toggleBlockPropsIcons();
+    }
+    if (settingsChangedKey.includes('pagePropsLayout')) {
+        togglePagePropsLayout();
+    }
+    if (settingsChangedKey.includes('pagePropsIcons')) {
+        togglePagePropsIcons();
     }
     if (settingsChangedKey.includes('hideDotProps')) {
         toggleHideDotProps();

@@ -40,21 +40,21 @@ export const toggleHideSetOfProps = () => {
 }
 
 const hideDotPropsUnload = () => {
-    const dotPropList = doc.querySelectorAll('.awUI-hideDotProp');
+    const dotPropList = doc.querySelectorAll('.awPr-hideDotProp');
     if (dotPropList.length) {
         for (let i = 0; i < dotPropList.length; i++) {
             const dotProp = dotPropList[i];
-            dotProp.classList.remove('hidden', 'awUI-hideDotProp');
+            dotProp.classList.remove('hidden', 'awPr-hideDotProp');
         }
     }
 }
 
 const hideSetOfPropsUnload = () => {
-    const setOfPropsList = doc.querySelectorAll('.awUI-hideSetOfProps');
+    const setOfPropsList = doc.querySelectorAll('.awPr-hideSetOfProps');
     if (setOfPropsList.length) {
         for (let i = 0; i < setOfPropsList.length; i++) {
             const setOfPropsItem = setOfPropsList[i];
-            setOfPropsItem.classList.remove('hidden', 'awUI-hideSetOfProps');
+            setOfPropsItem.classList.remove('hidden', 'awPr-hideSetOfProps');
         }
     }
 }
@@ -76,11 +76,11 @@ export const hideProps = async (propKeysList?: HTMLElement[]) => {
             const propItem = propKeysList[i].parentElement!.parentElement;
             if (propKeyItemText && propItem) {
                 if (globals.pluginConfig.hideDotProps && propKeyItemText?.startsWith('.')) {
-                    propItem.classList.add('hidden', 'awUI-hideDotProp');
+                    propItem.classList.add('hidden', 'awPr-hideDotProp');
                 } else if (globals.pluginConfig.hideSetOfProps && hidePropsArr.includes(propKeyItemText)) {
-                    propItem.classList.add('hidden', 'awUI-hideSetOfProps');
+                    propItem.classList.add('hidden', 'awPr-hideSetOfProps');
                 } else {
-                    propItem.classList.remove('hidden', 'awUI-hideSetOfProps');
+                    propItem.classList.remove('hidden', 'awPr-hideSetOfProps');
                 }
             }
         }

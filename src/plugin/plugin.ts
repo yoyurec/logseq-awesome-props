@@ -1,8 +1,10 @@
 import { doc, body, globals } from '../modules/globals/globals';
 
-import { iconPropsLoad, iconPropsUnload } from '../modules/iconProps/iconProps';
-import { hidePropsLoad, hidePropsUnload } from '../modules/hideProps/hideProps';
 import { checkPluginUpdate } from '../utils/utils';
+
+import { propsIconsLoad, propsIconsUnload } from '../modules/propsIcons/propsIcons';
+import { hidePropsLoad, hidePropsUnload } from '../modules/hideProps/hideProps';
+import { propsLayoutLoad, propsLayoutUnload } from '../modules/propsLayout/propsLayout';
 
 export const pluginLoad = () => {
     body.classList.add(globals.isPluginEnabled);
@@ -37,12 +39,12 @@ const registerPlugin = async () => {
     logseq.App.registerUIItem(
         'toolbar',
         {
-            key: 'Awesome-props',
+            key: 'AwesomeProps',
             template: `
                 <a
                 class="button" id="awPr-toggle-button"
                 data-on-click="showSettingsPopup" data-rect>
-                    <i class="ti ti-list-details"></i>
+                    <i id="awPr-toggle-icon"></i>
                 </a>
             `
         }
@@ -61,12 +63,13 @@ const unregisterPlugin = () => {
 
 export const showSettingsPopup = () => {
     logseq.showSettingsUI();
- }
+}
 
 // Main logic runners
 const runStuff = async () => {
     setTimeout(() => {
-        iconPropsLoad();
+        propsIconsLoad();
+        propsLayoutLoad();
     }, 2000);
     setTimeout(() => {
         hidePropsLoad();
@@ -74,6 +77,6 @@ const runStuff = async () => {
 }
 
 const stopStuff = () => {
-    iconPropsUnload();
+    propsLayoutUnload();
     hidePropsUnload();
 }
