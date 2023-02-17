@@ -8,7 +8,7 @@ import predefinedIconsList from './predefinedIcons.json';
 
 import { settingsConfig } from './settingsConfig';
 import { toggleHideDotProps, toggleHideSetOfProps } from '../modules/hideProps/hideProps';
-import { toggleIconProps } from '../modules/iconProps/iconProps';
+import { refreshIconsCSS, toggleIconProps } from '../modules/iconProps/iconProps';
 
 export const settingsLoad = () => {
     let insertIndex = 0;
@@ -53,7 +53,9 @@ export const onSettingsChangedCallback = (settings: LSPluginBaseInfo['settings']
     if (!settingsChangedKey.length) {
         return;
     }
-
+    if (settingsChangedKey.some(key => key.startsWith('icon-'))) {
+        refreshIconsCSS();
+    }
     if (settingsChangedKey.includes('iconProps')) {
         toggleIconProps();
     }
