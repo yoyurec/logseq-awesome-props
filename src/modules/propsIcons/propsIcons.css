@@ -120,18 +120,16 @@ body[data-awpr-page-props-icons] .pre-block > .flex > .editor-wrapper > .editor-
 /* content */
 [data-macro-name="i"] {
     display: inline-block;
+    height: 0;
 }
 
 [data-awpr-icon] {
+    width: 1em;
     font-style: normal;
 }
 [data-awpr-icon]::before {
-    top: 2px;
-    width: 1em;
-    margin: 0 0.2em 0 0;
-    font-family: tabler-icons;
-    color: #888a;
-    font-size: 1.13em;
-    font-weight: 400;
     position: relative;
+    top: 1px;
+    font-family: tabler-icons;
+    font-size: 1.13em;
 }
