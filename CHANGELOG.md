@@ -1,3 +1,10 @@
+## [1.3.2](https://github.com/yoyurec/logseq-awesome-props/compare/v1.3.1...v1.3.2) (2023-02-18)
+
+
+### Bug Fixes
+
+* **settigs:** compact and friendly list ([3d86686](https://github.com/yoyurec/logseq-awesome-props/commit/3d86686d3a492db13b5bace567636ac346791830))
+
 ## [1.3.1](https://github.com/yoyurec/logseq-awesome-props/compare/v1.3.0...v1.3.1) (2023-02-18)
 
 
