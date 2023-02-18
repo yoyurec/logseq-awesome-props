@@ -1,3 +1,10 @@
+## [1.4.3](https://github.com/yoyurec/logseq-awesome-props/compare/v1.4.2...v1.4.3) (2023-02-18)
+
+
+### Bug Fixes
+
+* **hideprops:** bigger css spec ([c38f077](https://github.com/yoyurec/logseq-awesome-props/commit/c38f0775bc904c8dd4fafaf922208373b335f952))
+
 ## [1.4.2](https://github.com/yoyurec/logseq-awesome-props/compare/v1.4.1...v1.4.2) (2023-02-18)
 
 
