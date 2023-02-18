@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/yoyurec/logseq-awesome-props/compare/v1.2.4...v1.3.0) (2023-02-18)
+
+
+### Features
+
+* **icons:** sport, track, reflect pack ([36ca3de](https://github.com/yoyurec/logseq-awesome-props/commit/36ca3de63341f01dea27b6a8c09555d5c012bc72))
+
 ## [1.2.4](https://github.com/yoyurec/logseq-awesome-props/compare/v1.2.3...v1.2.4) (2023-02-18)
 
 
