@@ -1,3 +1,10 @@
+## [1.4.1](https://github.com/yoyurec/logseq-awesome-props/compare/v1.4.0...v1.4.1) (2023-02-18)
+
+
+### Bug Fixes
+
+* **content:** inline hiccup render ([a36c7c5](https://github.com/yoyurec/logseq-awesome-props/commit/a36c7c57d2f419d7af67dc0caad7e70ee31f7761))
+
 # [1.4.0](https://github.com/yoyurec/logseq-awesome-props/compare/v1.3.2...v1.4.0) (2023-02-18)
 
 
