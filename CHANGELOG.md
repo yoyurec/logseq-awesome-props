@@ -1,3 +1,10 @@
+## [1.3.1](https://github.com/yoyurec/logseq-awesome-props/compare/v1.3.0...v1.3.1) (2023-02-18)
+
+
+### Bug Fixes
+
+* **settings:** compact view ([0b78eaf](https://github.com/yoyurec/logseq-awesome-props/commit/0b78eafe884c0c5c9254b40a1f7af5d2f66d8b79))
+
 # [1.3.0](https://github.com/yoyurec/logseq-awesome-props/compare/v1.2.4...v1.3.0) (2023-02-18)
 
 
