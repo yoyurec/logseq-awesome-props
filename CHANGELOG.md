@@ -1,3 +1,10 @@
+## [1.2.4](https://github.com/yoyurec/logseq-awesome-props/compare/v1.2.3...v1.2.4) (2023-02-18)
+
+
+### Bug Fixes
+
+* **icons:** add 'repeat', change relation icons, reorder ([dc472cc](https://github.com/yoyurec/logseq-awesome-props/commit/dc472cc4ec3768c966519332b79af75fbe3ccbe1))
+
 ## [1.2.3](https://github.com/yoyurec/logseq-awesome-props/compare/v1.2.2...v1.2.3) (2023-02-18)
 
 
