@@ -118,6 +118,10 @@ body[data-awpr-page-props-icons] .pre-block > .flex > .editor-wrapper > .editor-
 }
 
 /* content */
+[data-macro-name="i"] {
+    display: inline-block;
+}
+
 [data-awpr-icon] {
     font-style: normal;
 }
