@@ -3,14 +3,29 @@
 /* Icons */
 .settings-modal .desc-item[data-key^="icon-"] {
     padding-top: 0;
-    padding-bottom: 2px;
+    padding-bottom: 0;
+}
+
+.settings-modal .desc-item[data-key^=icon-] .form-input {
+    display: none;
+}
+.settings-modal .desc-item[data-key^=icon-]:hover .form-input {
+    display: block;
+}
+
+/*
+.settings-modal .desc-item[data-key^="icon-"] {
     float: left;
     width: 46%;
 }
-
-.desc-item[data-key="otherHeading"] {
+.heading-item[data-key="otherHeading"] {
     clear: both;
 }
+.desc-item[data-key^="icon-"] .form-input {
+    width: 100%;
+}
+
+*/
 
 .settings-modal .desc-item[data-key^="icon-"] .form-control {
     margin-left: 30px;
@@ -25,8 +40,4 @@
     font-size: 1.13em;
     font-weight: 400;
     width: 1em;
-}
-
-.desc-item[data-key^="icon-"] .form-input {
-    width: 100%;
 }
