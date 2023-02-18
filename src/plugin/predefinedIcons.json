@@ -1,8 +1,12 @@
 [
     {"eade": "link,links,url,source"},
+    {"ea2b": "email,e-mail"},
     {"eb34": "tag,tags"},
     {"edef": "alias"},
     {"edff": "related"},
+    {"f2bd": "parent"},
+    {"f2ba": "child"},
+    {"f2bb": "sibling"},
     {"ece8": "media"},
     {"eaba": "type,page-type"},
     {"edc5": "area"},
