@@ -1,3 +1,10 @@
+## [1.2.2](https://github.com/yoyurec/logseq-awesome-props/compare/v1.2.1...v1.2.2) (2023-02-18)
+
+
+### Bug Fixes
+
+* **icons:** add email, parent, child, sibling ([93bd80e](https://github.com/yoyurec/logseq-awesome-props/commit/93bd80e01f0bf868e9ba2962bbb3907e2b49b6d5))
+
 ## [1.2.1](https://github.com/yoyurec/logseq-awesome-props/compare/v1.2.0...v1.2.1) (2023-02-18)
 
 
