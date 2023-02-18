@@ -116,3 +116,18 @@ body[data-awpr-page-props-icons] .pre-block > .flex > .editor-wrapper > .editor-
 .ls-block .page-reference:hover {
     filter: none;
 }
+
+/* content */
+[data-awpr-icon] {
+    font-style: normal;
+}
+[data-awpr-icon]::before {
+    top: 2px;
+    width: 1em;
+    margin: 0 0.2em 0 0;
+    font-family: tabler-icons;
+    color: #888a;
+    font-size: 1.13em;
+    font-weight: 400;
+    position: relative;
+}

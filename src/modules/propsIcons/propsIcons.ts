@@ -66,6 +66,9 @@ const getIconsCSS = (): string => {
             .desc-item[data-key="icon-${iconCode}"] .form-control::before {
                 content: "\\${iconCode}" !important;
             }
+            [data-awpr-icon="${propName}"]::before {
+                content: "\\${iconCode}";
+            }
             `;
             css += newCSSItem;
         }
