@@ -3,18 +3,30 @@
 /* Icons */
 .settings-modal .desc-item[data-key^="icon-"] {
     padding-top: 0;
-    padding-bottom: 0;
+    padding-bottom: 2px;
+    float: left;
+    width: 46%;
 }
+
+.desc-item[data-key="otherHeading"] {
+    clear: both;
+}
+
 .settings-modal .desc-item[data-key^="icon-"] .form-control {
     margin-left: 30px;
     padding-top: 0;
 }
+
 .settings-modal .desc-item[data-key^="icon-"] .form-control::before {
     position: absolute;
-    top: 4px;
+    top: 0;
     left: 10px;
     font-family: tabler-icons;
     font-size: 1.13em;
     font-weight: 400;
     width: 1em;
+}
+
+.desc-item[data-key^="icon-"] .form-input {
+    width: 100%;
 }
