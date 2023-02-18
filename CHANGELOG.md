@@ -1,3 +1,10 @@
+## [1.2.3](https://github.com/yoyurec/logseq-awesome-props/compare/v1.2.2...v1.2.3) (2023-02-18)
+
+
+### Bug Fixes
+
+* **icons:** re-combine groups ([6dcfd0f](https://github.com/yoyurec/logseq-awesome-props/commit/6dcfd0fa93317b895d1d9dbba87f97fecc46cdfd))
+
 ## [1.2.2](https://github.com/yoyurec/logseq-awesome-props/compare/v1.2.1...v1.2.2) (2023-02-18)
 
 
