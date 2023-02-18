@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/yoyurec/logseq-awesome-props/compare/v1.3.2...v1.4.0) (2023-02-18)
+
+
+### Features
+
+* **content:** inline icons via macros ([d66da2d](https://github.com/yoyurec/logseq-awesome-props/commit/d66da2d1818eb101ba4883f9ffb3d6169553c3ba))
+
 ## [1.3.2](https://github.com/yoyurec/logseq-awesome-props/compare/v1.3.1...v1.3.2) (2023-02-18)
 
 
