@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/yoyurec/logseq-awesome-props/compare/v1.2.0...v1.2.1) (2023-02-18)
+
+
+### Bug Fixes
+
+* **icons:** merging with user props names ([e842172](https://github.com/yoyurec/logseq-awesome-props/commit/e8421720292f7f5da5a0bde0788c9680a318997b))
+
 # [1.2.0](https://github.com/yoyurec/logseq-awesome-props/compare/v1.1.2...v1.2.0) (2023-02-17)
 
 
