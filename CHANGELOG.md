@@ -1,3 +1,10 @@
+## [1.4.2](https://github.com/yoyurec/logseq-awesome-props/compare/v1.4.1...v1.4.2) (2023-02-18)
+
+
+### Bug Fixes
+
+* **content:** icons style ([a209990](https://github.com/yoyurec/logseq-awesome-props/commit/a2099905ce0c5b6a589dd3cfde76821dd44cac9f))
+
 ## [1.4.1](https://github.com/yoyurec/logseq-awesome-props/compare/v1.4.0...v1.4.1) (2023-02-18)
 
 
