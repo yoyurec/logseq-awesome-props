@@ -1,5 +1,4 @@
 [
-    {"ef68": "author,creator,owner,by,who,attendee,participant"},
     {"eade": "link,links,url,source"},
     {"ea2b": "email,e-mail"},
     {"eb34": "tag,tags"},
@@ -9,6 +8,8 @@
     {"eb77": "parent"},
     {"ea17": "child"},
     {"eb31": "sibling"},
+    {"ef68": "author,creator,owner,by,who,attendee,participant,user"},
+    {"ebf2": "team,community,users"},
     {"eaba": "type,page-type"},
     {"edc5": "area"},
     {"ec9f": "category,subcategory,topic"},
@@ -19,7 +20,6 @@
     {"ea67": "status"},
     {"ea52": "published,date,day,week,month,year"},
     {"ea04": "pace,time,duration"},
-    {"eb72": "repeat"},
     {"ea39": "book,pdf"},
     {"eafd": "docs,documentation,article"},
     {"ece8": "media"},
@@ -42,6 +42,24 @@
     {"ee1e": "price"},
     {"eb25": "paid"},
     {"ed76": "certificate"},
+    {"ef92": "health,activity,cardio"},
+    {"f2db": "workout,exercise,yoga,body-part"},
+    {"eb5c": "rest,sleep"},
     {"eff0": "equipment"},
-    {"f2db": "body-part"}
+    {"f015": "quantity,set,sets"},
+    {"eb72": "reps,repeat"},
+    {"f291": "measure,measurement"},
+    {"ef53": "scale,weight"},
+    {"ea5c": "chart,progress,metric"},
+    {"f21d": "recipe"},
+    {"eeff": "eat,food,nutrition"},
+    {"efde": "water"},
+    {"ef0e": "coffee"},
+    {"eab7": "alcohol"},
+    {"ecc4": "cigarette"},
+    {"eeb2": "formula,function"},
+    {"ecf4": "percent,percentage"},
+    {"eb73": "total,sum,amount"}
+
 ]
+
