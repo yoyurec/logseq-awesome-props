@@ -38,14 +38,14 @@ const getPredefinedIconsSettings = (): SettingSchemaDesc[] => {
         const newSettingsItem:SettingSchemaDesc = {
             key: `icon-${Object.keys(iconObj)[0]}`,
             title: '',
-            description: '',
+            description: Object.values(iconObj)[0],
             type: 'string',
-            default: Object.values(iconObj)[0],
+            default: '',
         }
         settingsArr.push(newSettingsItem);
     }
     return settingsArr;
- }
+}
 
 // Setting changed
 export const onSettingsChangedCallback = (settings: LSPluginBaseInfo['settings'], oldSettings: LSPluginBaseInfo['settings']) => {

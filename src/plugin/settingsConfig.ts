@@ -84,7 +84,7 @@ export const settingsConfig: SettingSchemaDesc[] = [
     },
     {
         key: 'iconsListHeading',
-        title: 'Icons list. Change/translate properties names to yours (comma separated, no spaces)',
+        title: 'Predefined icons. Translate properties names to yours, add new to existing... (comma separated, no spaces)',
         description: '',
         type: 'heading',
         default: null,

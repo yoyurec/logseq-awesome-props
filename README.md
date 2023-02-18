@@ -47,6 +47,7 @@ Awesome grid or simple flat inline, with or without icons!
 
 ### Icons
 Icons, according to property value or it's (predefined) name.
+⚠ For proper work you need to set `:property-pages/enabled? true` in `config.edn`!
 
 Check [full list of predefined props](https://github.com//yoyurec/logseq-awesome-props/raw/main/docs/props-demo.md)!
 
