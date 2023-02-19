@@ -1,15 +1,15 @@
 @import url("./settingsForms.css");
 
 /* Icons */
-.settings-modal .desc-item[data-key^="icon-"] {
+.settings-modal .desc-item[data-key^="userIcon-"] {
     padding-top: 0;
     padding-bottom: 0;
 }
 
-.settings-modal .desc-item[data-key^=icon-] .form-input {
+.settings-modal .desc-item[data-key^=userIcon-] .form-input {
     display: none;
 }
-.settings-modal .desc-item[data-key^=icon-]:hover .form-input {
+.settings-modal .desc-item[data-key^=userIcon-]:hover .form-input {
     display: block;
 }
 
@@ -27,12 +27,12 @@
 
 */
 
-.settings-modal .desc-item[data-key^="icon-"] .form-control {
+.settings-modal .desc-item[data-key^="userIcon-"] .form-control {
     margin-left: 30px;
     padding-top: 0;
 }
 
-.settings-modal .desc-item[data-key^="icon-"] .form-control::before {
+.settings-modal .desc-item[data-key^="userIcon-"] .form-control::before {
     position: absolute;
     top: 0;
     left: 10px;

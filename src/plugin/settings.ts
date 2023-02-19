@@ -32,18 +32,18 @@ export const settingsLoad = () => {
 }
 
 const getPredefinedIconsSettings = (): SettingSchemaDesc[] => {
-    const settingsArr = [];
-    for (let i = 0; i < predefinedIconsList.length; ++i) {
-        const iconObj = predefinedIconsList[i];
+    const settingsArr:SettingSchemaDesc[] = [];
+    Object.entries(predefinedIconsList).forEach(iconRecord => {
+        const [iconCode, propsNames] = iconRecord;
         const newSettingsItem:SettingSchemaDesc = {
-            key: `icon-${Object.keys(iconObj)[0]}`,
+            key: `userIcon-${iconCode}`,
             title: '',
-            description: Object.values(iconObj)[0],
+            description: `${propsNames}`,
             type: 'string',
-            default: '',
+            default: ''
         }
         settingsArr.push(newSettingsItem);
-    }
+    });
     return settingsArr;
 }
 
@@ -54,7 +54,7 @@ export const onSettingsChangedCallback = (settings: LSPluginBaseInfo['settings']
     if (!settingsChangedKey.length) {
         return;
     }
-    if (settingsChangedKey.some(key => key.startsWith('icon-'))) {
+    if (settingsChangedKey.some(key => key.startsWith('userIcon-'))) {
         refreshPropsIconsListCSS();
     }
     if (settingsChangedKey.includes('blockPropsLayout')) {
