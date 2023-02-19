@@ -1,3 +1,10 @@
+## [1.4.4](https://github.com/yoyurec/logseq-awesome-props/compare/v1.4.3...v1.4.4) (2023-02-19)
+
+
+### Bug Fixes
+
+* **settings:** proper override defaults with users config ([fde5089](https://github.com/yoyurec/logseq-awesome-props/commit/fde50893609ed868c59b7c1f43fce599a896444c))
+
 ## [1.4.3](https://github.com/yoyurec/logseq-awesome-props/compare/v1.4.2...v1.4.3) (2023-02-18)
 
 
