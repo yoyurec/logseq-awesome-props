@@ -41,6 +41,8 @@ From Logseq store - `Plugins -> Marketplace`
 
 Awesome grid or simple flat inline, with or without icons!
 
+Plus per block configuration (global style overrides) - `.awpr-layout-flat:: true` or `.awpr-layout-grid:: true`
+
 ![](https://github.com//yoyurec/logseq-awesome-props/raw/main/screenshots/layout.png)
 
 ![](https://github.com//yoyurec/logseq-awesome-props/raw/main/screenshots/settings-layout.png)
@@ -52,7 +54,8 @@ Icons, according to property names (predefined or overwritten by yours).
 
 ![](https://github.com//yoyurec/logseq-awesome-props/raw/main/screenshots/settings-icons.png)
 
-In addition to predefined set, you can add your own!
+#### Extend icons set
+In addition to predefined set, you can extend set with your **own icons**!
 
 Just open `awesome-props-icons` page and add page props block with `prop:: iconCode` lines.
 
