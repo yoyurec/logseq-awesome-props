@@ -60,15 +60,12 @@
 .ls-block.ls-block[data-collapsed^="{"] > div > div > div > div > .block-content > .block-properties {
     display: none !important;
 }
-
 [data-awpr-block-props-layout="grid"] .ls-block:not([data-collapsed^="{"]) > div > div > div > div > .block-content > .block-properties:not(.page-properties),
-.ls-block:not([data-collapsed^="{"]) > div > div > div > div > .block-content > .block-properties:not(.page-properties)[data-awpr-block-props-layout="grid"],
-.ls-block.ls-block[data-refs-self*=".awpr-layout-grid"] .block-properties {
+.ls-block.ls-block.ls-block:not([data-collapsed^="{"])[data-refs-self*=".awpr-layout-grid"] > div > div > div > div > .block-content > .block-properties {
     display: grid !important;
 }
 [data-awpr-block-props-layout="flat"] .ls-block:not([data-collapsed^="{"]) > div > div > div > div > .block-content > .block-properties:not(.page-properties),
-.ls-block:not([data-collapsed^="{"]) > div > div > div > div > .block-content > .block-properties:not(.page-properties)[data-awpr-block-props-layout="flat"],
-.ls-block.ls-block[data-refs-self*=".awpr-layout-flat"] .block-properties {
+.ls-block.ls-block.ls-block:not([data-collapsed^="{"])[data-refs-self*=".awpr-layout-flat"] > div > div > div > div > .block-content > .block-properties {
     display: block !important;
 }
 
