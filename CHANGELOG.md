@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/yoyurec/logseq-awesome-props/compare/v1.4.4...v1.5.0) (2023-02-22)
+
+
+### Features
+
+* **icons:** user icon set + layout per-block config, simplify css ([b3d84fa](https://github.com/yoyurec/logseq-awesome-props/commit/b3d84fa7f51e9d80b0f75876f62ec79ba4cdbba3))
+
 ## [1.4.4](https://github.com/yoyurec/logseq-awesome-props/compare/v1.4.3...v1.4.4) (2023-02-19)
 
 
