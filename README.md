@@ -19,12 +19,11 @@
 ### 📋 Restyled and iconized properties for Logseq ala Notion/Tana
 
 ## Features
-* 📋 Restyled page/block properties keys: icons aka Notion/Tana style <a href="#-properties-style">🡖</a>
+* 📰 Restyled layout: grid or flat view ala Tana<a href="#layout">🡖</a>
+* 💣 Page/block properties with icons ala Notion <a href="#icons">🡖</a>
 * 👓 Hide properties: all `.dotProps` or specified in list <a href="#-hide-properties">🡖</a>
 
 ![](https://github.com//yoyurec/logseq-awesome-props/raw/main/screenshots/screen.png)
-
-![](https://github.com//yoyurec/logseq-awesome-props/raw/main/screenshots/awesomeProps.png)
 
 ## Installation
 
@@ -34,10 +33,11 @@ From Logseq store - `Plugins -> Marketplace`
 
 ![](https://github.com//yoyurec/logseq-awesome-props/raw/main/screenshots/market.png)
 
+## Features
 
-## 📋 Properties style
+### 📋 Properties style
 
-### Layout
+#### Layout
 
 Awesome grid or simple flat inline, with or without icons!
 
@@ -45,13 +45,25 @@ Awesome grid or simple flat inline, with or without icons!
 
 ![](https://github.com//yoyurec/logseq-awesome-props/raw/main/screenshots/settings-layout.png)
 
-### Icons
-Icons, according to property value or it's (predefined) name.
+#### Icons
+Icons, according to property names (predefined or overwritten by yours).
+
 ⚠ For proper work you need to set `:property-pages/enabled? true` in `config.edn`!
 
 ![](https://github.com//yoyurec/logseq-awesome-props/raw/main/screenshots/settings-icons.png)
 
-## 👓 Hide properties
+In addition to predefined set, you can add your own!
+
+Just open `awesome-props-icons` page and add page props block with `iconCode:: propName1,paropName2,...` text.
+
+Get codes on https://tabler-icons.io
+
+**PS:** 💡 You can share your configs pages via https://github.com/dangermccann/logseq-template-gallery
+
+![](https://github.com//yoyurec/logseq-awesome-props/raw/main/screenshots/user-icons.png)
+
+
+### 👓 Hide properties
 
 * Hide properties started with dot `.`
 * or your own list of key names
