@@ -1,3 +1,10 @@
+## [1.5.1](https://github.com/yoyurec/logseq-awesome-props/compare/v1.5.0...v1.5.1) (2023-02-22)
+
+
+### Bug Fixes
+
+* **layout:** grid flag ([1188b0f](https://github.com/yoyurec/logseq-awesome-props/commit/1188b0f2dbfd4657ead6e4a5d9d24e2e9b907416))
+
 # [1.5.0](https://github.com/yoyurec/logseq-awesome-props/compare/v1.4.4...v1.5.0) (2023-02-22)
 
 
