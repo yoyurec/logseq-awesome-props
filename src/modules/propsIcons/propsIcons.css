@@ -10,12 +10,12 @@ body[data-awpr-block-props-icons] .block-properties:not(.page-properties) .page-
     color: #888888AA;
     font-size: 1.13em;
     font-weight: 400;
-    margin-right: 0.3em;
+    margin-right: 0.2em;
 }
 
 /* edit */
 body[data-awpr-page-props-icons] .pre-block > .flex > .editor-wrapper > .editor-inner > textarea {
-    padding: 0 0 0 2em !important;
+    padding: 0 0 0 1.9em !important;
     border: 4px solid transparent !important;
     background:
         var(--awPr-propEdit-icon) 0.45em 0 / 1.2em 1.5em repeat-y local,
