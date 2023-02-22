@@ -90,6 +90,20 @@ export const settingsConfig: SettingSchemaDesc[] = [
         default: null,
     },
     {
+        key: 'usersIconsHeading',
+        title: 'User icons',
+        description: '',
+        type: 'heading',
+        default: null,
+    },
+    {
+        key: 'iconsPropsPage',
+        title: 'Page name with your custom icons config',
+        description: 'Use props block with `prop:: iconCode` text. Get codes on https://tabler-icons.io. ⚠ Not all icons (lot of started with "f" code are missed) supported by Logseq (update is coming...)',
+        type: 'string',
+        default: 'awesome-props-icons',
+    },
+    {
         key: 'otherHeading',
         title: 'Other',
         description: '',

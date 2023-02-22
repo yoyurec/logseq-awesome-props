@@ -69,7 +69,7 @@ export const hideProps = async (propKeysList?: HTMLElement[]) => {
     if (propKeysList.length) {
         let hidePropsArr: string[] = [];
         if (globals.pluginConfig.hideSetOfProps) {
-            hidePropsArr = (globals.pluginConfig.hideSetOfProps as string).trim().toLowerCase().replaceAll(', ', ',').split(',');
+            hidePropsArr = (globals.pluginConfig.hideSetOfProps as string).trim().toLowerCase().replaceAll(' ', '').split(',');
         }
         for (let i = 0; i < propKeysList.length; i++) {
             const propKeyItemText = propKeysList[i].textContent;

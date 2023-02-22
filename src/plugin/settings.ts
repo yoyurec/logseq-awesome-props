@@ -1,14 +1,14 @@
 import { LSPluginBaseInfo, SettingSchemaDesc } from '@logseq/libs/dist/LSPlugin.user';
 
 import { objectsKeysDiff } from '../utils/utils';
-import { globals } from '../modules/globals/globals';
+import { doc, globals } from '../modules/globals/globals';
 
 import './settings.css';
 import predefinedIconsList from './predefinedIcons.json';
 
 import { settingsConfig } from './settingsConfig';
 import { toggleHideDotProps, toggleHideSetOfProps } from '../modules/hideProps/hideProps';
-import { refreshPropsIconsListCSS, toggleBlockPropsIcons, togglePagePropsIcons } from '../modules/propsIcons/propsIcons';
+import { refreshUserIconsListCSS, refreshUserPropsListCSS, toggleBlockPropsIcons, togglePagePropsIcons } from '../modules/propsIcons/propsIcons';
 import { togglePagePropsLayout, toggleBlockPropsLayout } from '../modules/propsLayout/propsLayout';
 
 export const settingsLoad = () => {
@@ -20,7 +20,6 @@ export const settingsLoad = () => {
     }
     const predefinedIconsSettings = getPredefinedIconsSettings();
     settingsConfig.splice(insertIndex, 0, ...predefinedIconsSettings);
-    console.dir(settingsConfig);
     logseq.useSettingsSchema(settingsConfig);
 
     globals.pluginConfig = logseq.settings;
@@ -47,6 +46,14 @@ const getPredefinedIconsSettings = (): SettingSchemaDesc[] => {
     return settingsArr;
 }
 
+const addIconsPropsPageLink = () => {
+    doc.getElementById('iconsPropsPageLink')?.remove();
+    const iconsPropsPageBlock = doc.querySelector('.desc-item[data-key="iconsPropsPage"');
+    const iconsPropsPageLink = `<a id="iconsPropsPageLink" href="#/page/${globals.pluginConfig.iconsPropsPage}">Open page</s>`
+    iconsPropsPageBlock?.insertAdjacentHTML('beforeend', iconsPropsPageLink);
+}
+
+
 // Setting changed
 export const onSettingsChangedCallback = (settings: LSPluginBaseInfo['settings'], oldSettings: LSPluginBaseInfo['settings']) => {
     globals.pluginConfig = { ...settings };
@@ -55,7 +62,10 @@ export const onSettingsChangedCallback = (settings: LSPluginBaseInfo['settings']
         return;
     }
     if (settingsChangedKey.some(key => key.startsWith('userIcon-'))) {
-        refreshPropsIconsListCSS();
+        refreshUserPropsListCSS();
+    }
+    if (settingsChangedKey.includes('userIconsList')) {
+        refreshUserIconsListCSS();
     }
     if (settingsChangedKey.includes('blockPropsLayout')) {
         toggleBlockPropsLayout();
@@ -74,5 +84,9 @@ export const onSettingsChangedCallback = (settings: LSPluginBaseInfo['settings']
     }
     if (settingsChangedKey.includes('hideSetOfProps')) {
         toggleHideSetOfProps();
+    }
+    if (settingsChangedKey.includes('iconsPropsPage')) {
+        addIconsPropsPageLink();
+        // ....
     }
 }

@@ -1,4 +1,5 @@
-import { doc } from '../globals/globals';
+import { doc, globals } from '../globals/globals';
+import { refreshUserIconsListCSS } from '../propsIcons/propsIcons';
 import { hideProps } from './hideProps';
 
 let propsChangedObserverConfig: MutationObserverInit;
@@ -12,7 +13,7 @@ export const propsChangedObserverInit = () => {
     propsChangedObserver = new MutationObserver(propsChangedCallback);
 };
 
-const propsChangedCallback: MutationCallback = function (mutationsList) {
+const propsChangedCallback: MutationCallback = async function (mutationsList) {
     for (let i = 0; i < mutationsList.length; i++) {
         const mutationItem = mutationsList[i];
         const addedNode = mutationItem.addedNodes[0] as HTMLElement;
@@ -20,6 +21,11 @@ const propsChangedCallback: MutationCallback = function (mutationsList) {
             const propKeysList = [... addedNode.querySelectorAll('.block-properties .page-property-key')] as HTMLElement[];
             if (propKeysList.length) {
                 hideProps(propKeysList);
+                const currentPage = await logseq.Editor.getCurrentPage();
+                const iconsSetPageName = (globals.pluginConfig.iconsPropsPage as string).toLowerCase();
+                if (currentPage && currentPage.name === iconsSetPageName) {
+                    refreshUserIconsListCSS();
+                }
             }
         }
     }

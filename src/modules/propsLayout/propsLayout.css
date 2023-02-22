@@ -1,14 +1,28 @@
 .block-properties {
     overflow: hidden;
     position: relative;
+    margin: 0;
     padding: 0 8px !important;
     border: 4px solid var(--ls-block-properties-background-color) !important;
     background: var(--ls-block-properties-background-color) !important;
 }
 
 .block-properties.page-properties {
-    border: 4px solid var(--ls-page-properties-background-color) !important;
-    background: var(--ls-page-properties-background-color) !important;
+    border-color: var(--ls-page-properties-background-color) !important;
+    background-color: var(--ls-page-properties-background-color) !important;
+}
+
+.block-properties > div > div {
+    display: inline-flex !important;
+}
+
+.page-property-key {
+    display: inline-flex;
+    flex-grow: 1;
+}
+
+.block-properties span.page-property-key:hover {
+    background: none;
 }
 
 .block-properties .page-property-value {
@@ -20,153 +34,117 @@
     display: none;
 }
 
-.block-properties > div,
+.block-properties .page-property-value .mr-1 {
+    margin-right: 0;
+}
+
 .block-properties > div > :is(div, span, a):first-child {
-    position: relative;
+    line-height: 2.7ex;
 }
 
 
-body[data-awpr-block-props-layout="grid"] .block-properties:not(.page-properties),
-.block-properties:not(.page-properties)[data-awpr-block-props-layout="grid"],
-body[data-awpr-page-props-layout="grid"] .block-properties.page-properties,
-.block-properties.page-properties[data-awpr-page-props-layout="grid"] {
+[data-awpr-block-props-layout="grid"] .block-properties:not(.page-properties),
+[data-awpr-page-props-layout="grid"] .block-properties.page-properties,
+.ls-block[data-refs-self*=".awpr-layout-grid"] .block-properties {
     display: grid !important;
     grid-template-columns: 1fr 10fr;
 }
 
-body[data-awpr-block-props-layout="flat"] .block-properties:not(.page-properties),
-.block-properties:not(.page-properties)[data-awpr-block-props-layout="flat"],
-body[data-awpr-page-props-layout="flat"] .block-properties.page-properties,
-.block-properties.page-properties[data-awpr-page-props-layout="flat"] {
+[data-awpr-block-props-layout="flat"] .block-properties:not(.page-properties),
+[data-awpr-page-props-layout="flat"] .block-properties.page-properties,
+.ls-block[data-refs-self*=".awpr-layout-flat"] .block-properties {
     display: block !important;
 }
 
 /* Collapsed*/
-.ls-block[data-collapsed] > div > div > div > div > .block-content > .block-properties {
+.ls-block[data-collapsed^="{"] > div > div > div > div > .block-content > .block-properties {
     display: none !important;
 }
 
-body[data-awpr-block-props-layout="grid"] .ls-block:not([data-collapsed]) > div > div > div > div > .block-content > .block-properties:not(.page-properties),
-body[data-awpr-block-props-layout="grid"] .ls-block[data-collapsed="false"] > div > div > div > div > .block-content > .block-properties:not(.page-properties),
-.ls-block:not([data-collapsed]) > div > div > div > div > .block-content > .block-properties:not(.page-properties)[data-awpr-block-props-layout="grid"],
-.ls-block[data-collapsed="false"] > div > div > div > div > .block-content > .block-properties:not(.page-properties)[data-awpr-block-props-layout="grid"] {
+[data-awpr-block-props-layout="grid"] .ls-block:not([data-collapsed^="{"]) > div > div > div > div > .block-content > .block-properties:not(.page-properties),
+.ls-block:not([data-collapsed^="{"]) > div > div > div > div > .block-content > .block-properties:not(.page-properties)[data-awpr-block-props-layout="grid"],
+.ls-block[data-refs-self*=".awpr-layout-grid"] .block-properties {
     display: grid !important;
 }
-body[data-awpr-block-props-layout="flat"] .ls-block:not([data-collapsed]) > div > div > div > div > .block-content > .block-properties:not(.page-properties),
-body[data-awpr-block-props-layout="flat"] .ls-block[data-collapsed="false"] > div > div > div > div > .block-content > .block-properties:not(.page-properties),
-.ls-block:not([data-collapsed]) > div > div > div > div > .block-content > .block-properties:not(.page-properties)[data-awpr-block-props-layout="flat"],
-.ls-block[data-collapsed="false"] > div > div > div > div > .block-content > .block-properties:not(.page-properties)[data-awpr-block-props-layout="flat"] {
+[data-awpr-block-props-layout="flat"] .ls-block:not([data-collapsed^="{"]) > div > div > div > div > .block-content > .block-properties:not(.page-properties),
+.ls-block:not([data-collapsed^="{"]) > div > div > div > div > .block-content > .block-properties:not(.page-properties)[data-awpr-block-props-layout="flat"],
+.ls-block[data-refs-self*=".awpr-layout-flat"] .block-properties {
     display: block !important;
 }
 
 
-body[data-awpr-block-props-layout="grid"] .block-properties:not(.page-properties) > div,
-.block-properties:not(.page-properties)[data-awpr-block-props-layout="grid"] > div,
-body[data-awpr-page-props-layout="grid"] .block-properties.page-properties > div,
-.block-properties.page-properties[data-awpr-page-props-layout="grid"] > div {
+[data-awpr-block-props-layout="grid"] .block-properties:not(.page-properties) > div,
+[data-awpr-page-props-layout="grid"] .block-properties.page-properties > div,
+.ls-block[data-refs-self*=".awpr-layout-grid"] .block-properties > div {
     display: contents !important;
 }
 
-body[data-awpr-block-props-layout="flat"] .block-properties:not(.page-properties) > div,
-.block-properties:not(.page-properties)[data-awpr-block-props-layout="flat"] > div,
-body[data-awpr-page-props-layout="flat"] .block-properties.page-properties > div,
-.block-properties.page-properties[data-awpr-page-props-layout="flat"] > div {
-    display: inline-block !important;
+[data-awpr-block-props-layout="flat"] .block-properties:not(.page-properties) > div,
+[data-awpr-page-props-layout="flat"] .block-properties.page-properties > div,
+.ls-block[data-refs-self*=".awpr-layout-flat"] .block-properties > div {
+    display: inline-flex !important;
 }
 
-body[data-awpr-block-props-layout="flat"] .block-properties:not(.page-properties) > div,
-.block-properties:not(.page-properties)[data-awpr-block-props-layout="flat"] > div,
-body[data-awpr-page-props-layout="flat"] .block-properties.page-properties > div,
-.block-properties.page-properties[data-awpr-page-props-layout="flat"] > div {
-    margin-right: 6px;
-}
-
-body[data-awpr-block-props-layout="flat"] .block-properties:not(.page-properties) > div::after,
-.block-properties:not(.page-properties)[data-awpr-block-props-layout="flat"] > div::after,
-body[data-awpr-page-props-layout="flat"] .block-properties.page-properties > div::after,
-.block-properties.page-properties[data-awpr-page-props-layout="flat"] > div::after {
+[data-awpr-block-props-layout="flat"] .block-properties:not(.page-properties) > div::before,
+[data-awpr-page-props-layout="flat"] .block-properties.page-properties > div::before,
+.ls-block[data-refs-self*=".awpr-layout-flat"] .block-properties > div::before {
     content: ',';
+    margin-right: 0.5em;
     opacity: 0.7;
 }
-.block-properties > div:last-child::after {
-    content: '' !important;
+.block-properties > div:first-child::before {
+    display: none !important;
 }
 
-body[data-awpr-block-props-layout="grid"] .block-properties:not(.page-properties) > div > span.mr-1,
-.block-properties:not(.page-properties)[data-awpr-block-props-layout="grid"] > div > span.mr-1,
-body[data-awpr-page-props-layout="grid"] .block-properties.page-properties > div > span.mr-1,
-.block-properties.page-properties[data-awpr-page-props-layout="grid"] > div > span.mr-1 {
+[data-awpr-block-props-layout="grid"] .block-properties:not(.page-properties) > div > span.mr-1,
+[data-awpr-page-props-layout="grid"] .block-properties.page-properties > div > span.mr-1,
+.ls-block[data-refs-self*=".awpr-layout-grid"] .block-properties > div > span.mr-1 {
     display: none;
 }
 
-body[data-awpr-block-props-layout="grid"] .block-properties:not(.page-properties) > div > :is(div, span, a):first-child::after,
-.block-properties:not(.page-properties)[data-awpr-block-props-layout="grid"] > div > :is(div, span, a):first-child::after,
-body[data-awpr-page-props-layout="grid"] .block-properties.page-properties > div > :is(div, span, a):first-child::after,
-.block-properties.page-properties[data-awpr-page-props-layout="grid"] > div > :is(div, span, a):first-child::after {
+[data-awpr-block-props-layout="flat"] .block-properties:not(.page-properties) > div > span.mr-1,
+[data-awpr-page-props-layout="flat"] .block-properties.page-properties > div > span.mr-1,
+.ls-block[data-refs-self*=".awpr-layout-flat"] .block-properties > div > span.mr-1 {
+    display: inline;
+    margin-right: 0.4em;
+}
+
+[data-awpr-block-props-layout="grid"] .block-properties:not(.page-properties) > div > :is(div, span, a):first-child::after,
+[data-awpr-page-props-layout="grid"] .block-properties.page-properties > div > :is(div, span, a):first-child::after,
+.ls-block[data-refs-self*=".awpr-layout-grid"] .block-properties > div > :is(div, span, a):first-child::after {
     content: "●";
-    position: absolute;
-    top: 0.7em;
-    right: 0.8em;
     color: var(--ls-primary-text-color);
     opacity: .2;
     font-family: Inter;
     font-size: 0.6em;
+    margin: 0 1em 0 1.6em;
+}
+[data-awpr-block-props-layout="flat"] .block-properties:not(.page-properties) > div > :is(div, span, a):first-child::after,
+[data-awpr-page-props-layout="flat"] .block-properties.page-properties > div > :is(div, span, a):first-child::after,
+.ls-block[data-refs-self*=".awpr-layout-flat"] .block-properties > div > :is(div, span, a):first-child::after {
+    display: none;
 }
 
-body[data-awpr-block-props-layout="grid"] .block-properties:not(.page-properties) > div > :is(div, span, a),
-.block-properties:not(.page-properties)[data-awpr-block-props-layout="grid"] > div > :is(div, span, a),
-body[data-awpr-page-props-layout="grid"] .block-properties.page-properties > div > :is(div, span, a),
-.block-properties.page-properties[data-awpr-page-props-layout="grid"] > div > :is(div, span, a) {
+
+/* Cover */
+/*
+:root {
+    --awPr-poster-width: 300px;
+}
+.ls-block[data-refs-self*="cover"] .block-properties {
+    padding-right: calc(var(--awPr-poster-width) + 1em) !important;
+}
+.ls-block[data-refs-self*="cover"] .block-properties .image-resize {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 4px;
+    width: var(--awPr-poster-width) !important;
+}
+.ls-block[data-refs-self*="cover"] .block-properties .asset-container {
     margin: 0;
 }
-
-
-body[data-awpr-block-props-layout="grid"] .block-properties:not(.page-properties) > div > :is(div, span, a):first-child,
-.block-properties:not(.page-properties)[data-awpr-block-props-layout="grid"] > div > :is(div, span, a):first-child,
-body[data-awpr-page-props-layout="grid"] .block-properties.page-properties > div > :is(div, span, a):first-child,
-.block-properties.page-properties[data-awpr-page-props-layout="grid"] > div > :is(div, span, a):first-child {
-    padding: 0 1.8em 0 0;
+.ls-block[data-refs-self*="cover"] .block-properties .image-resize img {
+    width: var(--awPr-poster-width) !important;
 }
-
-body[data-awpr-block-props-layout="flat"] .block-properties:not(.page-properties) > div > :is(div, span, a):first-child,
-.block-properties:not(.page-properties)[data-awpr-block-props-layout="flat"] > div > :is(div, span, a):first-child,
-body[data-awpr-page-props-layout="flat"] .block-properties.page-properties > div > :is(div, span, a):first-child,
-.block-properties.page-properties[data-awpr-page-props-layout="flat"] > div > :is(div, span, a):first-child {
-    padding: 0 0 0 0;
-}
-
-body[data-awpr-block-props-icons][data-awpr-block-props-layout="grid"] .block-properties:not(.page-properties) > div > :is(div, span, a):first-child,
-.block-properties:not(.page-properties)[data-awpr-block-props-icons][data-awpr-block-props-layout="grid"] > div > :is(div, span, a):first-child,
-body[data-awpr-page-props-icons][data-awpr-page-props-layout="grid"] .block-properties.page-properties > div > :is(div, span, a):first-child,
-.block-properties.page-properties[data-awpr-page-props-icons][data-awpr-page-props-layout="grid"] > div > :is(div, span, a):first-child {
-    padding: 0 1.8em 0 1.7em;
-}
-
-body[data-awpr-block-props-icons][data-awpr-block-props-layout="flat"] .block-properties:not(.page-properties) > div > :is(div, span, a):first-child,
-.block-properties:not(.page-properties)[data-awpr-block-props-icons][data-awpr-block-props-layout="flat"] > div > :is(div, span, a):first-child,
-body[data-awpr-page-props-icons][data-awpr-page-props-layout="flat"] .block-properties.page-properties > div > :is(div, span, a):first-child,
-.block-properties.page-properties[data-awpr-page-props-icons][data-awpr-page-props-layout="flat"] > div > :is(div, span, a):first-child {
-    padding: 0 0 0 1.4em;
-}
-
-body[data-awpr-block-props-layout="flat"] .block-properties:not(.page-properties) .page-property-value > .mr-1,
-.block-properties:not(.page-properties)[data-awpr-block-props-layout="flat"] .page-property-value > .mr-1,
-body[data-awpr-page-props-layout="flat"] .block-properties.page-properties .page-property-value > .mr-1,
-.block-properties.page-properties[data-awpr-page-props-layout="flat"] .page-property-value > .mr-1 {
-    margin-right: 0;
-}
-
-body[data-awpr-block-props-layout="grid"] .block-properties:not(.page-properties),
-.block-properties:not(.page-properties)[data-awpr-block-props-layout="grid"],
-body[data-awpr-page-props-layout="grid"] .block-properties.page-properties,
-.block-properties.page-properties[data-awpr-page-props-layout="grid"] {
-    --awPr-valueIcon-left: 8px;
-    --awPr-keyIcon-top: -0.1ex;
-}
-body[data-awpr-block-props-layout="flat"] .block-properties:not(.page-properties),
-.block-properties:not(.page-properties)[data-awpr-block-props-layout="flat"],
-body[data-awpr-page-props-layout="flat"] .block-properties.page-properties,
-.block-properties.page-properties[data-awpr-page-props-layout="flat"] {
-    --awPr-valueIcon-left: 2px;
-    --awPr-keyIcon-top: -0.3ex;
-}
+ */
