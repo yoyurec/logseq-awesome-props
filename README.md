@@ -54,7 +54,7 @@ Icons, according to property names (predefined or overwritten by yours).
 
 In addition to predefined set, you can add your own!
 
-Just open `awesome-props-icons` page and add page props block with `iconCode:: propName1,paropName2,...` text.
+Just open `awesome-props-icons` page and add page props block with `prop:: iconCode` lines.
 
 Get codes on https://tabler-icons.io
 
