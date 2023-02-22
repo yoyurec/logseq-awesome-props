@@ -1,3 +1,10 @@
+## [1.5.3](https://github.com/yoyurec/logseq-awesome-props/compare/v1.5.2...v1.5.3) (2023-02-22)
+
+
+### Bug Fixes
+
+* **layout:** dot vertical position ([37bce13](https://github.com/yoyurec/logseq-awesome-props/commit/37bce13be7a82d68e9954d7d3118bf3bd7fc7f18))
+
 ## [1.5.2](https://github.com/yoyurec/logseq-awesome-props/compare/v1.5.1...v1.5.2) (2023-02-22)
 
 
