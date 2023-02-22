@@ -117,11 +117,12 @@
 .ls-block.ls-block[data-refs-self*=".awpr-layout-grid"] .block-properties > div > :is(div, span, a):first-child::after {
     content: "●";
     display: block;
-    margin: 0 1em 0 1.6em;
+    margin: 2px 1em 0 1.6em;
     color: var(--ls-primary-text-color);
     opacity: .2;
     font-family: Inter;
     font-size: 0.6em;
+    line-height: 2.2em;
 }
 [data-awpr-block-props-layout="flat"] .block-properties:not(.page-properties) > div > :is(div, span, a):first-child::after,
 [data-awpr-page-props-layout="flat"] .block-properties.page-properties > div > :is(div, span, a):first-child::after,
