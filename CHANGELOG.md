@@ -1,3 +1,10 @@
+# [1.6.0](https://github.com/yoyurec/logseq-awesome-props/compare/v1.5.3...v1.6.0) (2023-02-23)
+
+
+### Features
+
+* **pageicons:** add 'prop-icon' list generation ([dfd5b3b](https://github.com/yoyurec/logseq-awesome-props/commit/dfd5b3b303c4440e423f2b19758b425df27b45fe))
+
 ## [1.5.3](https://github.com/yoyurec/logseq-awesome-props/compare/v1.5.2...v1.5.3) (2023-02-22)
 
 
