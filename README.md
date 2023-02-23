@@ -54,6 +54,11 @@ Icons, according to property names (predefined or overwritten by yours).
 
 ![](https://github.com//yoyurec/logseq-awesome-props/raw/main/screenshots/settings-icons.png)
 
+PS: for overview, you can generate prop-icon list via `/` menu `"AwesomeProps: insert list generator button"`
+
+![](https://github.com//yoyurec/logseq-awesome-props/raw/main/screenshots/props-list-generator.mp4)
+
+
 #### Extend icons set
 In addition to predefined set, you can extend set with your **own icons**!
 

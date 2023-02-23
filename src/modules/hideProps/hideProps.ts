@@ -59,21 +59,21 @@ const hideSetOfPropsUnload = () => {
     }
 }
 
-export const hideProps = async (propKeysList?: HTMLElement[]) => {
+export const hideProps = async (propsKeysList?: HTMLElement[]) => {
     if (!globals.pluginConfig.hideDotProps && !globals.pluginConfig.hideSetOfProps) {
         return;
     }
-    if (!propKeysList) {
-        propKeysList = [... doc.querySelectorAll('#app-container .block-properties .page-property-key')] as HTMLElement[];
+    if (!propsKeysList) {
+        propsKeysList = [... doc.querySelectorAll('#app-container .block-properties .page-property-key')] as HTMLElement[];
     }
-    if (propKeysList.length) {
+    if (propsKeysList.length) {
         let hidePropsArr: string[] = [];
         if (globals.pluginConfig.hideSetOfProps) {
             hidePropsArr = (globals.pluginConfig.hideSetOfProps as string).trim().toLowerCase().replaceAll(' ', '').split(',');
         }
-        for (let i = 0; i < propKeysList.length; i++) {
-            const propKeyItemText = propKeysList[i].textContent;
-            const propItem = propKeysList[i].parentElement!.parentElement;
+        for (let i = 0; i < propsKeysList.length; i++) {
+            const propKeyItemText = propsKeysList[i].textContent;
+            const propItem = propsKeysList[i].parentElement!.parentElement;
             if (propKeyItemText && propItem) {
                 if (globals.pluginConfig.hideDotProps && propKeyItemText?.startsWith('.')) {
                     propItem.classList.add('hidden', 'awPr-hideDotProp');
@@ -85,4 +85,5 @@ export const hideProps = async (propKeysList?: HTMLElement[]) => {
             }
         }
     }
+    // const visiblePropsKeysList = [... doc.querySelectorAll('#app-container .block-properties')] as HTMLElement[];
 };

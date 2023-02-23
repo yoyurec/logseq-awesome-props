@@ -18,9 +18,9 @@ const propsChangedCallback: MutationCallback = async function (mutationsList) {
         const mutationItem = mutationsList[i];
         const addedNode = mutationItem.addedNodes[0] as HTMLElement;
         if (addedNode && addedNode.childNodes.length) {
-            const propKeysList = [... addedNode.querySelectorAll('.block-properties .page-property-key')] as HTMLElement[];
-            if (propKeysList.length) {
-                hideProps(propKeysList);
+            const propsKeysList = [... addedNode.querySelectorAll('.block-properties .page-property-key')] as HTMLElement[];
+            if (propsKeysList.length) {
+                hideProps(propsKeysList);
                 const currentPage = await logseq.Editor.getCurrentPage();
                 const iconsSetPageName = (globals.pluginConfig.iconsPropsPage as string).toLowerCase();
                 if (currentPage && currentPage.name === iconsSetPageName) {

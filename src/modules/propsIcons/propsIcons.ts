@@ -1,8 +1,8 @@
 import { doc, body, globals } from '../globals/globals';
 
 import predefinedIconsListJSON from '../../plugin/predefinedIcons.json';
-
 import propsIconsStyles from './propsIcons.css?inline';
+
 import { toKebabCase } from '../../utils/utils';
 
 type iconRecord = {
@@ -26,9 +26,10 @@ export const togglePagePropsIcons = () => {
 }
 
 export const propsIconsLoad = async () => {
-    injectPropsIconsCSS();
     toggleBlockPropsIcons();
     togglePagePropsIcons();
+    injectPropsIconsCSS();
+    renderPredefinedPropsList();
 }
 
 export const propsIconsUnload = () => {
@@ -58,12 +59,20 @@ export const refreshUserIconsListCSS = async () => {
     logseq.provideStyle({ key: 'awPr-userIconsList-css', style: generateUserPropsListCSS(await getUserIconsList()) });
 }
 
+const generatePropsList = (iconsRecordsObject: iconRecord): string => {
+    const propsObj:iconRecord = revertIconsRecords(iconsRecordsObject);
+    return Object.keys(propsObj).reduce((list, prop) => {
+        return list + `  ${prop}:: ${propsObj[prop]}\n`;
+    },``);
+}
+
 const generatePropsListCSS = (iconsRecordsObject: iconRecord): string => {
     const propsObj:iconRecord = revertIconsRecords(iconsRecordsObject);
     return Object.keys(propsObj).reduce((css, prop) => {
         return css + generatePropItemCSS(prop, propsObj[prop]);
     },'');
 }
+
 const generateUserPropsListCSS = (iconsRecordsObject: iconRecord): string => {
     return Object.keys(iconsRecordsObject).reduce((css, prop) => {
         return css + generateUserPropItemCSS(prop, iconsRecordsObject[prop]);
@@ -147,3 +156,42 @@ const generateUserPropItemCSS = (propName: string, iconCode: string) => {
     `;
 }
 
+export const insertPropsListBlock = async (event: HTMLElement) => {
+    const predefinedProps: iconRecord = predefinedIconsListJSON;
+    const userProps: iconRecord = getUsersProps();
+    const blockUUID = event.dataset.blockUuid as string;
+    Object.keys(userProps).forEach(key => {
+        predefinedProps[key] = predefinedProps[key] + ',' + userProps[key];
+    });
+    const propsObj: iconRecord = revertIconsRecords(predefinedProps);
+    const propsList = Object.keys(propsObj).reduce((list, prop) => {
+        return list + `  ${prop}::  ${propsObj[prop]}\n`;
+    },'  .awpr-layout-grid:: true\n');
+    await logseq.Editor.insertBlock(blockUUID, propsList);
+}
+
+const renderPredefinedPropsList = async () => {
+    logseq.provideModel({
+        insertPropsListBlock: insertPropsListBlock,
+    });
+
+    logseq.Editor.registerSlashCommand('AwesomeProps: insert list generator button', async () => {
+        await logseq.Editor.insertAtEditingCursor(
+            `{{renderer :awpr-props-list}} `,
+        );
+    })
+
+    logseq.App.onMacroRendererSlotted(({ slot, payload }) => {
+        const awPrRenderKey = 'awpr-props-list';
+        const [type] = payload.arguments
+        if (!type?.startsWith(`:${awPrRenderKey}`)) {
+            return
+        }
+        return logseq.provideUI({
+            key: awPrRenderKey,
+            slot,
+            reset: true,
+            template: `<button class="button" style="display: flex; align-items: center; border: 1px solid var(--ls-border-color);" data-block-uuid="${payload.uuid}" data-on-click="insertPropsListBlock"><i style="width: 1em;">${globals.pluginSVGIcon}</i> Insert props list from settings (predefined + your overrides)</button>`
+        });
+    });
+}
