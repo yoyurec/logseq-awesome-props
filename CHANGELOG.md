@@ -1,3 +1,10 @@
+# [1.7.0](https://github.com/yoyurec/logseq-awesome-props/compare/v1.6.0...v1.7.0) (2023-02-23)
+
+
+### Features
+
+* **icons:** add pseudo icon picker ([f613382](https://github.com/yoyurec/logseq-awesome-props/commit/f61338262d87881c01abae4b57fa29c771db3207))
+
 # [1.6.0](https://github.com/yoyurec/logseq-awesome-props/compare/v1.5.3...v1.6.0) (2023-02-23)
 
 
