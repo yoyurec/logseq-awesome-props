@@ -177,7 +177,13 @@ const renderPredefinedPropsList = async () => {
 
     logseq.Editor.registerSlashCommand('AwesomeProps: insert list generator button', async () => {
         await logseq.Editor.insertAtEditingCursor(
-            `{{renderer :awpr-props-list}} `,
+            '{{renderer :awpr-props-list}}',
+        );
+    })
+
+    logseq.Editor.registerSlashCommand('AwesomeProps: insert Tabler icon picker', async () => {
+        await logseq.Editor.insertAtEditingCursor(
+            '[:iframe {:src "https://tabler-icons.io" height 400 :style "width: 600px"}]',
         );
     })
 
