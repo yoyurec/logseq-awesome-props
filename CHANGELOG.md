@@ -1,3 +1,10 @@
+# [1.8.0](https://github.com/yoyurec/logseq-awesome-props/compare/v1.7.0...v1.8.0) (2023-02-24)
+
+
+### Features
+
+* **pluginpopup:** add Tabler color picker ([07765f7](https://github.com/yoyurec/logseq-awesome-props/commit/07765f7d753a53b69d2537530d3487e15076665d))
+
 # [1.7.0](https://github.com/yoyurec/logseq-awesome-props/compare/v1.6.0...v1.7.0) (2023-02-23)
 
 
