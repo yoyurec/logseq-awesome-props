@@ -1,6 +1,6 @@
 import { packageVersion } from '../../.version';
 
-import { globals } from '../modules/globals/globals';
+import { body, doc, globals } from '../modules/globals/globals';
 
 export const objectsKeysDiff = (orig: object, updated: object) => {
     const difference = Object.keys(orig).filter((key) => {
@@ -11,6 +11,17 @@ export const objectsKeysDiff = (orig: object, updated: object) => {
         return orig[key] !== updated[key]
     });
     return difference;
+}
+
+export const getInheritedBackgroundColor = (el: Element | null): string => {
+    if (!el) {
+        return '';
+    }
+    const defaultStyle = 'rgba(0, 0, 0, 0)';
+    const backgroundColor = getComputedStyle(el).backgroundColor
+    if (backgroundColor != defaultStyle) return backgroundColor
+    if (!el.parentElement) return defaultStyle
+    return getInheritedBackgroundColor(el.parentElement)
 }
 
 export const checkPluginUpdate = async () => {
@@ -33,6 +44,44 @@ export const checkPluginUpdate = async () => {
     }
 }
 
+export const injectPluginCSS = (iframeId: string, label: string, cssContent: string) => {
+    const pluginIframe = doc.getElementById(iframeId) as HTMLIFrameElement;
+    if (!pluginIframe) {
+        return
+    }
+    ejectPluginCSS(iframeId, label);
+    pluginIframe.contentDocument?.head.insertAdjacentHTML(
+        'beforeend',
+        `<style id='${label}'>
+            ${cssContent}
+        </style>`
+    );
+}
+
+export const ejectPluginCSS = (iframeId: string, label: string) => {
+    const pluginIframe = doc.getElementById(iframeId) as HTMLIFrameElement;
+    if (!pluginIframe) {
+        return;
+    }
+    pluginIframe.contentDocument?.getElementById(label)?.remove();
+}
+
 export const toKebabCase = (str: string): string => {
     return str.replace(/([a-z])([A-Z])/g, '$1-$2').toLowerCase();
+}
+
+export const getMainCSSColors = (): string => {
+    const link = doc.createElement('a');
+    body.insertAdjacentElement('beforeend', link);
+    const linkColor = getComputedStyle(link).color.trim();
+    link.remove();
+    return `
+        :root {
+            --ls-primary-text-color:${getComputedStyle(doc.querySelector('.cp__sidebar-main-content')!).color.trim()};
+            --ls-primary-text-color-alt:${getComputedStyle(doc.querySelector('#left-sidebar .nav-header > div a span')!).color.trim()};
+            --ls-link-text-color:${linkColor};
+            --ls-primary-background-color:${getInheritedBackgroundColor(doc.querySelector('.cp__sidebar-main-content')).trim()};
+            --ls-secondary-background-color:${getInheritedBackgroundColor(doc.querySelector('.left-sidebar-inner')).trim()};
+        }
+    `
 }

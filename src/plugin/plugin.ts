@@ -5,6 +5,9 @@ import { checkPluginUpdate } from '../utils/utils';
 import { propsIconsLoad, propsIconsUnload } from '../modules/propsIcons/propsIcons';
 import { hidePropsLoad, hidePropsUnload } from '../modules/hideProps/hideProps';
 import { propsLayoutLoad, propsLayoutUnload } from '../modules/propsLayout/propsLayout';
+import { showPluginSettings, togglePluginPopup } from './pluginPopup';
+
+import './plugin.css';
 
 export const pluginLoad = () => {
     body.classList.add(globals.isPluginEnabled);
@@ -34,7 +37,8 @@ const pluginUnload = () => {
 
 const registerPlugin = async () => {
     logseq.provideModel({
-        showSettingsPopup: showSettingsPopup,
+        togglePluginPopup: togglePluginPopup,
+        showPluginSettings: showPluginSettings
     });
     logseq.App.registerUIItem(
         'toolbar',
@@ -43,7 +47,7 @@ const registerPlugin = async () => {
             template: `
                 <a
                 class="button" id="awPr-toggle-button"
-                data-on-click="showSettingsPopup" data-rect>
+                data-on-click="togglePluginPopup" data-rect>
                     <i id="awPr-toggle-icon">
                         ${globals.pluginSVGIcon}
                     </i>
@@ -63,10 +67,6 @@ const unregisterPlugin = () => {
     doc.getElementById('css-awesomeProps')?.remove();
 }
 
-export const showSettingsPopup = () => {
-    logseq.showSettingsUI();
-}
-
 // Main logic runners
 const runStuff = async () => {
     setTimeout(() => {
@@ -80,5 +80,6 @@ const runStuff = async () => {
 
 const stopStuff = () => {
     propsLayoutUnload();
+    propsIconsUnload();
     hidePropsUnload();
 }

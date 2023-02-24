@@ -6,28 +6,8 @@
     padding-bottom: 0;
 }
 
-.settings-modal .desc-item[data-key^=userIcon-] .form-input {
-    display: none;
-}
-.settings-modal .desc-item[data-key^=userIcon-]:hover .form-input {
-    display: block;
-}
-
-/*
-.settings-modal .desc-item[data-key^="icon-"] {
-    float: left;
-    width: 46%;
-}
-.heading-item[data-key="otherHeading"] {
-    clear: both;
-}
-.desc-item[data-key^="icon-"] .form-input {
-    width: 100%;
-}
-
-*/
-
 .settings-modal .desc-item[data-key^="userIcon-"] .form-control {
+    flex-direction: row;
     margin-left: 30px;
     padding-top: 0;
 }
@@ -40,4 +20,8 @@
     font-size: 1.13em;
     font-weight: 400;
     width: 1em;
+}
+
+.settings-modal .desc-item[data-key^="userIcon-"] .form-input {
+    width: 55% !important;
 }
