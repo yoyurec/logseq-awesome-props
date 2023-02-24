@@ -1,3 +1,10 @@
+## [1.8.1](https://github.com/yoyurec/logseq-awesome-props/compare/v1.8.0...v1.8.1) (2023-02-24)
+
+
+### Bug Fixes
+
+* **pluginpopup:** settings link ([3285f66](https://github.com/yoyurec/logseq-awesome-props/commit/3285f66765e610b9de3ef6cddfbfc6b6128e6db5))
+
 # [1.8.0](https://github.com/yoyurec/logseq-awesome-props/compare/v1.7.0...v1.8.0) (2023-02-24)
 
 
