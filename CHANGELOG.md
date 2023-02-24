@@ -1,3 +1,10 @@
+## [1.8.5](https://github.com/yoyurec/logseq-awesome-props/compare/v1.8.4...v1.8.5) (2023-02-24)
+
+
+### Bug Fixes
+
+* **plugin:** toolbar button ([b36ba73](https://github.com/yoyurec/logseq-awesome-props/commit/b36ba7312f4ccfbc5f27272cdcf233901f568b54))
+
 ## [1.8.4](https://github.com/yoyurec/logseq-awesome-props/compare/v1.8.3...v1.8.4) (2023-02-24)
 
 
