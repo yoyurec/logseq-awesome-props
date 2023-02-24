@@ -1,3 +1,10 @@
+## [1.8.4](https://github.com/yoyurec/logseq-awesome-props/compare/v1.8.3...v1.8.4) (2023-02-24)
+
+
+### Bug Fixes
+
+* **propslayout:** icons v align ([880572a](https://github.com/yoyurec/logseq-awesome-props/commit/880572a52228a32a7661df80fa741b9d14230f35))
+
 ## [1.8.3](https://github.com/yoyurec/logseq-awesome-props/compare/v1.8.2...v1.8.3) (2023-02-24)
 
 
