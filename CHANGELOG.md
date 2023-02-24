@@ -1,3 +1,10 @@
+## [1.8.2](https://github.com/yoyurec/logseq-awesome-props/compare/v1.8.1...v1.8.2) (2023-02-24)
+
+
+### Bug Fixes
+
+* **iconpicker:** add toggler ([e217c2f](https://github.com/yoyurec/logseq-awesome-props/commit/e217c2fda6eaa6dd92a1858c68a26f7d6a74f695))
+
 ## [1.8.1](https://github.com/yoyurec/logseq-awesome-props/compare/v1.8.0...v1.8.1) (2023-02-24)
 
 
