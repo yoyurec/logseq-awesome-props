@@ -40,6 +40,8 @@ const setPopupPosition = () => {
 const generatePluginPopup = () => {
     const app = document.getElementById('app');
     app!.addEventListener('click', containerClickHandler);
+    const appSettingsBtn = document.getElementById('app-settings-btn');
+    appSettingsBtn!.addEventListener('click', settingsBtnClickHandler);
 }
 
 const containerClickHandler = (e: Event) => {
@@ -49,7 +51,7 @@ const containerClickHandler = (e: Event) => {
     }
 }
 
-export const showPluginSettings = () => {
+export const settingsBtnClickHandler = () => {
     closePluginPopup();
     logseq.showSettingsUI();
 }
