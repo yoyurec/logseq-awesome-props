@@ -1,3 +1,10 @@
+## [1.8.3](https://github.com/yoyurec/logseq-awesome-props/compare/v1.8.2...v1.8.3) (2023-02-24)
+
+
+### Bug Fixes
+
+* **iconpicker:** link style ([95e488f](https://github.com/yoyurec/logseq-awesome-props/commit/95e488f7873c2faa6d8fce57f8edd27fd483683d))
+
 ## [1.8.2](https://github.com/yoyurec/logseq-awesome-props/compare/v1.8.1...v1.8.2) (2023-02-24)
 
 
