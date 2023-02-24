@@ -29,9 +29,7 @@ const setPopupPosition = () => {
             appInner!.style,
             {
                 top: `${buttonPos.top + 40}px`,
-                right: `0px`,
-                // items + padding + settings btn
-                height: `600px`
+                right: `0px`
             }
         );
     }
@@ -42,6 +40,8 @@ const generatePluginPopup = () => {
     app!.addEventListener('click', containerClickHandler);
     const appSettingsBtn = document.getElementById('app-settings-btn');
     appSettingsBtn!.addEventListener('click', settingsBtnClickHandler);
+    const iconPickerBtn = document.getElementById('icon-picker-btn');
+    iconPickerBtn!.addEventListener('click', iconPickerBtnClickHandler);
 }
 
 const containerClickHandler = (e: Event) => {
@@ -51,7 +51,11 @@ const containerClickHandler = (e: Event) => {
     }
 }
 
-export const settingsBtnClickHandler = () => {
+const settingsBtnClickHandler = () => {
     closePluginPopup();
     logseq.showSettingsUI();
+}
+
+const iconPickerBtnClickHandler = () => {
+    document.getElementById('app-inner')?.classList.toggle('hidden-picker');
 }

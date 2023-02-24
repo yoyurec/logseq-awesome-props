@@ -5,7 +5,7 @@ import { checkPluginUpdate } from '../utils/utils';
 import { propsIconsLoad, propsIconsUnload } from '../modules/propsIcons/propsIcons';
 import { hidePropsLoad, hidePropsUnload } from '../modules/hideProps/hideProps';
 import { propsLayoutLoad, propsLayoutUnload } from '../modules/propsLayout/propsLayout';
-import { settingsBtnClickHandler, togglePluginPopup } from './pluginPopup';
+import { togglePluginPopup } from './pluginPopup';
 
 import './plugin.css';
 
@@ -37,8 +37,7 @@ const pluginUnload = () => {
 
 const registerPlugin = async () => {
     logseq.provideModel({
-        togglePluginPopup: togglePluginPopup,
-        settingsBtnClickHandler: settingsBtnClickHandler
+        togglePluginPopup: togglePluginPopup
     });
     logseq.App.registerUIItem(
         'toolbar',
