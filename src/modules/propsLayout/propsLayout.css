@@ -14,11 +14,13 @@
 
 .block-properties > div > div {
     display: inline-flex !important;
+    align-items: center;
 }
 
 .page-property-key {
     display: inline-flex;
     flex-grow: 1;
+    line-height: 1.2em;
 }
 
 .block-properties span.page-property-key:hover {
