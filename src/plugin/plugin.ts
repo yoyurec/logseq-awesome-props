@@ -44,13 +44,13 @@ const registerPlugin = async () => {
         {
             key: 'AwesomeProps',
             template: `
-                <a
+                <button
                 class="button" id="awPr-toggle-button"
                 data-on-click="togglePluginPopup" data-rect>
-                    <i id="awPr-toggle-icon">
+                    <span id="awPr-toggle-icon">
                         ${globals.pluginSVGIcon}
-                    </i>
-                </a>
+                    </span>
+                </button>
             `
         }
     );
