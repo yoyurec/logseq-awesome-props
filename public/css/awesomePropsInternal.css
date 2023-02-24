@@ -28,6 +28,7 @@ html, body {
     padding: 10px 16px 9px 18px;
     cursor: pointer;
     border-bottom: 1px solid var(--ls-border-color);
+    user-select: none;
 }
 
 .btn:hover {
