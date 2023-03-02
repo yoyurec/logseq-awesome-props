@@ -1,3 +1,10 @@
+## [1.8.6](https://github.com/yoyurec/logseq-awesome-props/compare/v1.8.5...v1.8.6) (2023-03-02)
+
+
+### Bug Fixes
+
+* **pluginpopup:** css vars ([8a993b4](https://github.com/yoyurec/logseq-awesome-props/commit/8a993b4fca87e74c3cec8857b72e8a4d3833c85f))
+
 ## [1.8.5](https://github.com/yoyurec/logseq-awesome-props/compare/v1.8.4...v1.8.5) (2023-02-24)
 
 
