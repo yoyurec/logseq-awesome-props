@@ -1,3 +1,10 @@
+## [1.9.1](https://github.com/yoyurec/logseq-awesome-props/compare/v1.9.0...v1.9.1) (2023-03-03)
+
+
+### Bug Fixes
+
+* **iconpicker:** hide not existing icons ([f84c631](https://github.com/yoyurec/logseq-awesome-props/commit/f84c6310283a75d6e5f2b9ef629bdf03e720d484))
+
 # [1.9.0](https://github.com/yoyurec/logseq-awesome-props/compare/v1.8.7...v1.9.0) (2023-03-03)
 
 
