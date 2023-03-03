@@ -79,7 +79,7 @@ svg {
 
 #icon-picker-list {
     display: grid;
-    grid-gap: 8px;
+    grid-gap: 4px;
     grid-template-columns: repeat(4, 1fr);
 }
 
@@ -91,20 +91,25 @@ svg {
 }
 
 .icon-glyph {
+    width: 54px;
+    margin: 4px auto;
     font-family: 'tabler-icons';
     font-size: 30px;
     user-select: auto;
-    margin: 2px 0;
     cursor: pointer;
 }
 
 .icon-code {
     display: inline-block;
     margin: 4px 0;
-    padding: 2px 4px;
+    padding: 6px 10px;
     border: 1px dotted var(--ls-border-color);
     user-select: auto;
     cursor: pointer;
+}
+.icon-code:hover,
+.icon-glyph:hover {
+    background-color: var(--ls-primary-background-color);
 }
 
 .icon-name {
