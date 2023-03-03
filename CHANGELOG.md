@@ -1,3 +1,10 @@
+# [1.9.0](https://github.com/yoyurec/logseq-awesome-props/compare/v1.8.7...v1.9.0) (2023-03-03)
+
+
+### Features
+
+* **iconpicker:** replace iframe to own component. with search and copy to clipboard ([6636eb4](https://github.com/yoyurec/logseq-awesome-props/commit/6636eb4c04793ae1ba3796512ae005f5551ba99c))
+
 ## [1.8.7](https://github.com/yoyurec/logseq-awesome-props/compare/v1.8.6...v1.8.7) (2023-03-02)
 
 
