@@ -2,6 +2,7 @@ import { doc } from '../modules/globals/globals';
 import { getMainCSSColors, injectPluginCSS } from '../utils/utils';
 
 import tablerIconsListJSON from './tablerIcons.json';
+import logseqIconsListJSON from './logseqIcons.json';
 
 type iconPickerListObj = {
     styles: string;
@@ -113,8 +114,12 @@ const generateIconPicker = (iconsArr: iconItem[]): iconPickerListObj => {
         styles: '',
         html: ''
     };
+    const existingIcons: string[] = logseqIconsListJSON;
     iconsArr.forEach(item => {
-        // result.styles = result.styles + `.icon-glyph.icon-${item.u}:before{content:'\\${item.u}';}\n`
+        if (!existingIcons.includes(item.u)) {
+            // TODO: delete checking when Logseq will update Tabler icons to latest 2.x.x version
+            return;
+        }
         result.html = result.html + `
         <div class="icon-item" data-search="${item.t}">
             <div class="icon-glyph" title="Click to copy icon glyph">&#x${item.u};</div>
