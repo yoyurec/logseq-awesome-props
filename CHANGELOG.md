@@ -1,3 +1,10 @@
+## [1.9.3](https://github.com/yoyurec/logseq-awesome-props/compare/v1.9.2...v1.9.3) (2023-03-03)
+
+
+### Bug Fixes
+
+* **iconpicker:** more spacing for items ([a390866](https://github.com/yoyurec/logseq-awesome-props/commit/a39086613798126d0234becea0611ba70c4e1083))
+
 ## [1.9.2](https://github.com/yoyurec/logseq-awesome-props/compare/v1.9.1...v1.9.2) (2023-03-03)
 
 
