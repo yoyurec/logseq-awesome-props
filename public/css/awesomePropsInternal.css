@@ -19,7 +19,7 @@ html, body {
 
 #app-inner {
     position: absolute;
-    width: 460px;
+    width: 560px;
     height: 540px;
     padding: 8px 0;
     background-color: var(--ls-primary-background-color);
@@ -57,9 +57,9 @@ svg {
 }
 
 #icon-picker-search {
-    width: 94%;
+    width: 300px;
     height: 30px;
-    margin: 0 0 8px 0;
+    margin: 0 50px 8px 50px;
     padding: 0 4px;
     font-family: var(--font-os-system);
     font-size: 14px;
@@ -80,7 +80,7 @@ svg {
 #icon-picker-list {
     display: grid;
     grid-gap: 8px;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .icon-item {
