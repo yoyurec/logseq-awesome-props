@@ -1,3 +1,10 @@
+## [1.9.2](https://github.com/yoyurec/logseq-awesome-props/compare/v1.9.1...v1.9.2) (2023-03-03)
+
+
+### Bug Fixes
+
+* **iconpicker:** search field and layout sizes ([7dfe4d5](https://github.com/yoyurec/logseq-awesome-props/commit/7dfe4d5b0d14546396998021fbc14338313461b1))
+
 ## [1.9.1](https://github.com/yoyurec/logseq-awesome-props/compare/v1.9.0...v1.9.1) (2023-03-03)
 
 
