@@ -4,7 +4,7 @@ import { objectsKeysDiff } from '../utils/utils';
 import { doc, globals } from '../modules/globals/globals';
 
 import './settings.css';
-import predefinedIconsList from './predefinedIcons.json';
+import predefinedIconsListJSON from './predefinedIcons.json';
 
 import { settingsConfig } from './settingsConfig';
 import { toggleHideDotProps, toggleHideSetOfProps } from '../modules/hideProps/hideProps';
@@ -32,7 +32,7 @@ export const settingsLoad = () => {
 
 const getPredefinedIconsSettings = (): SettingSchemaDesc[] => {
     const settingsArr:SettingSchemaDesc[] = [];
-    Object.entries(predefinedIconsList).forEach(iconRecord => {
+    Object.entries(predefinedIconsListJSON).forEach(iconRecord => {
         const [iconCode, propsNames] = iconRecord;
         const newSettingsItem:SettingSchemaDesc = {
             key: `userIcon-${iconCode}`,

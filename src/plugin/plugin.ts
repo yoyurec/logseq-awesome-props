@@ -5,7 +5,7 @@ import { checkPluginUpdate } from '../utils/utils';
 import { propsIconsLoad, propsIconsUnload } from '../modules/propsIcons/propsIcons';
 import { hidePropsLoad, hidePropsUnload } from '../modules/hideProps/hideProps';
 import { propsLayoutLoad, propsLayoutUnload } from '../modules/propsLayout/propsLayout';
-import { togglePluginPopup } from './pluginPopup';
+import { generatePluginPopup, togglePluginPopup } from './pluginPopup';
 
 import './plugin.css';
 
@@ -59,7 +59,8 @@ const registerPlugin = async () => {
             const logseqCSS = doc.head.querySelector(`link[href="./css/style.css"]`);
             logseqCSS!.insertAdjacentHTML('afterend', `<link rel="stylesheet" id="css-awesomeProps" href="lsp://logseq.io/${globals.pluginID}/dist/assets/awesomeProps.css">`)
         }
-    }, 100)
+    }, 100);
+    generatePluginPopup();
 }
 
 const unregisterPlugin = () => {

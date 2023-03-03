@@ -64,8 +64,7 @@ In addition to predefined set, you can extend set with your **own icons**!
 
 Just open `awesome-props-icons` page and add page props block with `prop:: iconCode` lines.
 
-Get codes on https://tabler-icons.io OR use plugin toolbar popup OR insert 'icon picker' to page via `/` menu `"AwesomeProps: insert Tabler icon picker"`
-
+Get codes via plugin toolbar icon picker.
 
 **PS:** 💡 You can share your configs pages via https://github.com/dangermccann/logseq-template-gallery
 
