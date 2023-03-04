@@ -1,3 +1,10 @@
+# [1.10.0](https://github.com/yoyurec/logseq-awesome-props/compare/v1.9.4...v1.10.0) (2023-03-04)
+
+
+### Features
+
+* **iconpicker:** delete ([8eab8cc](https://github.com/yoyurec/logseq-awesome-props/commit/8eab8cc660b6727e5c33836763ffc95bf4b035f8))
+
 ## [1.9.4](https://github.com/yoyurec/logseq-awesome-props/compare/v1.9.3...v1.9.4) (2023-03-04)
 
 
