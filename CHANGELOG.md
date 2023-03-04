@@ -1,3 +1,10 @@
+## [1.9.4](https://github.com/yoyurec/logseq-awesome-props/compare/v1.9.3...v1.9.4) (2023-03-04)
+
+
+### Bug Fixes
+
+* **settings:** common styling upd ([f13840b](https://github.com/yoyurec/logseq-awesome-props/commit/f13840b414180c65cb395e9e8ca13efa68412c99))
+
 ## [1.9.3](https://github.com/yoyurec/logseq-awesome-props/compare/v1.9.2...v1.9.3) (2023-03-03)
 
 
