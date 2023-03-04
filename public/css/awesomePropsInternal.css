@@ -95,6 +95,7 @@ svg {
     margin: 4px auto;
     font-family: 'tabler-icons';
     font-size: 30px;
+    border-radius: 4px;
     user-select: auto;
     cursor: pointer;
 }
