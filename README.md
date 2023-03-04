@@ -1,4 +1,5 @@
 ## Other my plugins/themes
+* ✨ [Tabler picker](https://github.com/yoyurec/logseq-tabler-picker)
 * 🪓 [Awesome UI](https://github.com/yoyurec/logseq-awesome-ui)
 * 🎨 [Awesome Styler](https://github.com/yoyurec/logseq-awesome-styler)
 * ⭐ [Awesome Links](https://github.com/yoyurec/logseq-awesome-links)
@@ -64,7 +65,7 @@ In addition to predefined set, you can extend set with your **own icons**!
 
 Just open `awesome-props-icons` page and add page props block with `prop:: iconCode` lines.
 
-Get codes via plugin toolbar icon picker.
+Get codes via ✨ [Tabler icon picker](https://github.com/yoyurec/logseq-tabler-picker)
 
 **PS:** 💡 You can share your configs pages via https://github.com/dangermccann/logseq-template-gallery
 
