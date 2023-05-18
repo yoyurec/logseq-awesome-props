@@ -70,7 +70,10 @@
 .ls-block.ls-block.ls-block:not([data-collapsed^="{"])[data-refs-self*=".awpr-layout-flat"] > div > div > div > div > .block-content > .block-properties {
     display: block !important;
 }
-
+[data-awpr-block-props-layout="grid"] .ls-block:not([data-collapsed^="{"]) > div > div > div > div > .block-content > .block-properties:not(.page-properties):has(> div.hidden):not(:has(> div:not(.hidden))),
+.ls-block.ls-block.ls-block:not([data-collapsed^="{"])[data-refs-self*=".awpr-layout-grid"] > div > div > div > div > .block-content > .block-properties:has(> div.hidden):not(:has(> div:not(.hidden))) {
+    display: none !important;
+}
 
 [data-awpr-block-props-layout="grid"] .block-properties:not(.page-properties) > div,
 [data-awpr-page-props-layout="grid"] .block-properties.page-properties > div,
